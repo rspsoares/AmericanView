@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="pt-br" id="htmlpage">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="American View" />
+    <meta name="keywords" content="Ingles fluente, AmericanView, American View" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="url" content="www.americanview.com.br" />
+    <meta name="author" content="American View " />
+    <meta name="company" content="American View " />
+    <meta name="revisit-after" content="7" />
+    @*<link rev="made" href="mailto:suporte@keeptrue.com" />*@
+    <meta http-equiv="Content-Language" content="pt-br">
+    <title>..:: American View ::..</title>
+</head>
+<body>
+    <div id="Container" class="wrap">
+        @RenderBody()      
+    </div>    
+    <div id="FooterContainer">
+        <div id="Footer">
+            <div class="col-xs-12">
+                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
+                @*<a href="http://www.keeptrue.com" target="_blank">
+                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
+                </a>*@
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("Popup")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/owlcarousel")
+    @Scripts.Render("~/bundles/sticky")
+
+    @Styles.Render("~/Content/css")
+
+    @RenderSection("scripts", required: false)
+    @RenderSection("Styles", required: false)
+</body>
+</html>
