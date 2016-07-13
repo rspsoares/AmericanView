@@ -1185,6 +1185,8 @@
     <Content Include="Content\plugins\owl.carousel\owl-carousel\owl.carousel.min.js" />
     <Content Include="Content\plugins\owl.carousel\owl-carousel\owl.theme.css" />
     <Content Include="Content\plugins\owl.carousel\owl-carousel\owl.transitions.css" />
+    <Content Include="Content\plugins\youtube\play-button.png" />
+    <Content Include="Content\plugins\youtube\simplePlayer.js" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -1247,7 +1249,6 @@
     <Content Include="Scripts\jquery-2.2.2.min.js" />
     <Content Include="Scripts\jquery-2.2.2.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Content\plugins\sticky\jquery.sticky.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
@@ -1265,6 +1266,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\plugins\sticky\css\" />
+    <Folder Include="Content\plugins\sticky\js\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

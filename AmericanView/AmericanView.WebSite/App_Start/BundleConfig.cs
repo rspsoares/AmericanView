@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace AmericanView.WebSite
 {
@@ -9,8 +8,8 @@ namespace AmericanView.WebSite
         {
             /* -- SCRIPTS -- */
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                  "~/Content/jquery/jquery-{version}.js"));                           
-            
+                  "~/Content/jquery/jquery-{version}.js"));     
+
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                     "~/Content/bootstrap/js/bootstrap.js",
                     "~/Content/bootstrap/js/bootstrap-switch.js"));
@@ -23,10 +22,9 @@ namespace AmericanView.WebSite
 
             bundles.Add(new ScriptBundle("~/bundles/owlcarousel").Include(
                 "~/Content/plugins/owl.carousel/owl-carousel/owl.carousel.min.js"));
-
-            bundles.Add(new ScriptBundle("~/bundles/sticky").Include(
-                "~/Content/plugins/sticky/jquery.sticky.js"));
-
+            
+            bundles.Add(new ScriptBundle("~/bundles/youtube").Include(
+                "~/Content/plugins/youtube/simplePlayer.js"));
 
             /* -- CSS -- */
             bundles.Add(new StyleBundle("~/Content/css").Include(
@@ -38,9 +36,7 @@ namespace AmericanView.WebSite
                 "~/Content/bootstrap/css/mosaic-custom-bootstrap.css",
                 "~/Content/integrador-default.css",
                 "~/Content/plugins/owl.carousel/owl-carousel/owl.carousel.css",
-                "~/Content/plugins/owl.carousel/owl-carousel/owl.theme.css"
-                
-                ));
+                "~/Content/plugins/owl.carousel/owl-carousel/owl.theme.css"));
         }
     }
 }

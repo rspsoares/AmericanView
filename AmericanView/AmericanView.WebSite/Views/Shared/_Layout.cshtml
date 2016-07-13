@@ -10,33 +10,26 @@
     <meta name="url" content="www.americanview.com.br" />
     <meta name="author" content="American View " />
     <meta name="company" content="American View " />
-    <meta name="revisit-after" content="7" />
-    @*<link rev="made" href="mailto:suporte@keeptrue.com" />*@
+    <meta name="revisit-after" content="7" /> 
     <meta http-equiv="Content-Language" content="pt-br">
     <title>..:: American View ::..</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
     <div id="Container" class="wrap">
-        @RenderBody()      
-    </div>    
-    <div id="FooterContainer">
-        <div id="Footer">
-            <div class="col-xs-12">
-                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
-                @*<a href="http://www.keeptrue.com" target="_blank">
-                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
-                </a>*@
-            </div>
-        </div>
+        @RenderBody()    
+        <br />
+        <center>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</center>   
     </div>
 
     @Html.Partial("Popup")
-
-    @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
+  
+    @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/owlcarousel")
     @Scripts.Render("~/bundles/sticky")
+    @Scripts.Render("~/bundles/youtube")   
 
     @Styles.Render("~/Content/css")
 
