@@ -150,8 +150,7 @@
     <Content Include="Content\images\layout\bg-menu-treeview-xy.gif" />
     <Content Include="Content\images\layout\bg-menu-treeview-y.gif" />
     <Content Include="Content\images\layout\loading-page.gif" />
-    <Content Include="Content\images\layout\logo-keeptrue.png" />
-    <Content Include="Content\images\layout\logo-keeptrue_head.png" />
+    <Content Include="Content\images\layout\logo.png" />
     <Content Include="Content\jqueryvalidate\jquery.validate.js" />
     <Content Include="Content\jqueryvalidate\jquery.validate.min.js" />
     <Content Include="Content\jqueryvalidate\messages_pt_BR.js" />
@@ -835,7 +834,7 @@
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite.png" />
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite_2x.png" />
     <Content Include="Content\modernizr\modernizr-2.8.3.js" />
-    <Content Include="Content\integrador-default.css" />
+    <Content Include="Content\default.css" />
     <Content Include="Content\plugins\jquery-ui\ajax.js" />
     <Content Include="Content\plugins\jquery-ui\ajax\jsonp.js" />
     <Content Include="Content\plugins\jquery-ui\ajax\load.js" />
@@ -1241,6 +1240,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -1266,8 +1266,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\plugins\sticky\css\" />
-    <Folder Include="Content\plugins\sticky\js\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

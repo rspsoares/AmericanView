@@ -25,7 +25,7 @@ namespace AmericanView.WebSite
             
             bundles.Add(new ScriptBundle("~/bundles/youtube").Include(
                 "~/Content/plugins/youtube/simplePlayer.js"));
-
+            
             /* -- CSS -- */
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/kendo-ui/styles/web/kendo.common.css",
@@ -34,7 +34,7 @@ namespace AmericanView.WebSite
                 "~/Content/bootstrap/css/bootstrap.css",
                 "~/Content/bootstrap/css/bootstrap-switch.css",
                 "~/Content/bootstrap/css/mosaic-custom-bootstrap.css",
-                "~/Content/integrador-default.css",
+                "~/Content/default.css",
                 "~/Content/plugins/owl.carousel/owl-carousel/owl.carousel.css",
                 "~/Content/plugins/owl.carousel/owl-carousel/owl.theme.css"));
         }
