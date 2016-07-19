@@ -25,7 +25,10 @@ namespace AmericanView.WebSite
             
             bundles.Add(new ScriptBundle("~/bundles/youtube").Include(
                 "~/Content/plugins/youtube/simplePlayer.js"));
-            
+
+            bundles.Add(new ScriptBundle("~/bundles/countup").Include(
+                "~/Content/plugins/contador/countUp.js"));
+
             /* -- CSS -- */
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/kendo-ui/styles/web/kendo.common.css",

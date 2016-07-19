@@ -49,6 +49,6 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\bin\Syst
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\bin\System.Web.WebPages.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\bin\System.Web.WebPages.Deployment.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\bin\System.Web.WebPages.Razor.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\obj\Debug\AmericanView.WebSite.csprojResolveAssemblyReference.cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\obj\Debug\Keeptrue.Integrations.Monitoramento.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\obj\Debug\Keeptrue.Integrations.Monitoramento.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.WebSite\obj\Debug\AmericanView.WebSite.csprojResolveAssemblyReference.cache

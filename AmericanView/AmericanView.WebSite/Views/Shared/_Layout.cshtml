@@ -16,31 +16,7 @@
     <title>..:: American View ::..</title>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
-<body>  
-    @*Menu*@
-    <div style="position:fixed;top:0px;left:0px;width:100%;z-index:99;background-color: lightblue;">
-        <table>
-            <tr style="width:100%">
-                <td style="width:25%; text-align:center">
-                    <img src="~/Content/images/layout/logo.jpg" />
-                </td>
-                <td style="width:75%; text-align:right">
-                    <ul>
-                        <li><a href="#owl">HOME</a></li>
-                        <li><a href="#SobreNos">SOBRE NÓS</a></li>
-                        <li><a href="#Metodo">MÉTODO</a></li>
-                        <li><a href="#Video">VÍDEO</a></li>
-                        <li><a href="#TiposCurso">TIPOS DE CURSOS</a></li>
-                        <li><a href="#Curso">CURSO</a></li>
-                        <li><a href="#Metodologia">METODOLOGIA</a></li>
-                        <li><a href="#Intercambio">INTERCÂMBIO</a></li>
-                        <li><a href="#Contato">CONTATO</a></li>
-                    </ul>
-                </td>
-            </tr>
-        </table>        
-    </div>   
-
+<body>
     <div id="Container" class="wrap">
         @RenderBody()
         <br />
@@ -53,6 +29,7 @@
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/owlcarousel")  
     @Scripts.Render("~/bundles/youtube")   
+    @Scripts.Render("~/bundles/countup")
 
     @Styles.Render("~/Content/css")
 

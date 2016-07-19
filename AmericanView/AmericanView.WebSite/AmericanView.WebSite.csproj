@@ -835,6 +835,7 @@
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite_2x.png" />
     <Content Include="Content\modernizr\modernizr-2.8.3.js" />
     <Content Include="Content\default.css" />
+    <Content Include="Content\plugins\contador\countUp.js" />
     <Content Include="Content\plugins\jquery-ui\ajax.js" />
     <Content Include="Content\plugins\jquery-ui\ajax\jsonp.js" />
     <Content Include="Content\plugins\jquery-ui\ajax\load.js" />
