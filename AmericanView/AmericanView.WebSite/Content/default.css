@@ -5,7 +5,11 @@ url("fonts/segoeui.ttf") format("truetype")}
 html{background:url('images/layout/bg-menu-big.jpg') left top repeat-y;}
 body{font-family:Segoe UI, segoeui, Trebuchet MS, Arial, sans-serif;background-color:transparent;}
 html, body, .wrap{height:100%;}
-body > .wrap{height:auto;min-height:100%;}
+body > .wrap{
+    height:auto;
+    min-height:100%;   
+}
+
 #loading-page{position:fixed;height:100%;width:100%;background-color:rgba(0,110,180, 0.7);z-index:1051;display:none;}
 .img-loading{position:absolute;height:64px;width:64px;top:50%;left:50%;margin-left:-32px;margin-top:-32px;}
 .grey-nav, .grey-nav>a{background-color:#777 !important;}
@@ -462,26 +466,35 @@ body.md-skin{font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri
 
 #play:hover { background-color: rgba(0,0,0,0.2) !important; }
 
+ul li a {  
+    font-size:large;
+    font: Segoe UI;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: white;
+    background-color: lightblue;
+    text-align:right;
 }
 
 li {
-    float: left;   
+    float: left;    
 }
 
-li a {
+li a {   
     display: block;
     color: black;
     text-align:right;
-    padding: 16px;
+    padding: 20px;
     text-decoration: none;
 }
 
-/*li a:hover {
-    background-color: #111111;
-}*/
+a:hover {
+    text-decoration: none;
+    background-color: cornflowerblue;
+}

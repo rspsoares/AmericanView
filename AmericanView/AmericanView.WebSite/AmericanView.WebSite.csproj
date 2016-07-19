@@ -150,7 +150,7 @@
     <Content Include="Content\images\layout\bg-menu-treeview-xy.gif" />
     <Content Include="Content\images\layout\bg-menu-treeview-y.gif" />
     <Content Include="Content\images\layout\loading-page.gif" />
-    <Content Include="Content\images\layout\logo.png" />
+    <Content Include="Content\images\layout\logo.jpg" />
     <Content Include="Content\jqueryvalidate\jquery.validate.js" />
     <Content Include="Content\jqueryvalidate\jquery.validate.min.js" />
     <Content Include="Content\jqueryvalidate\messages_pt_BR.js" />

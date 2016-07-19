@@ -17,29 +17,35 @@
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>  
-    <div class="col-sm-12" style="position:fixed;top:0px;left:0px;width:100%;z-index:99;background-color: white">             
-        <div class="col-sm-3" style="text-align:left">
-            <img src="~/Content/images/layout/logo.png" />
-        </div>
-        <div class="col-sm-9">            
-            <nav>
-                <ul>
-                    <li><a href="#owl">Home</a></li>
-                    <li><a href="#divSobreNos">Sobre nós</a></li>
-                    <li><a href="#divMetodo">Método</a></li>
-                    <li><a href="#divVideo">Vídeo</a></li>
-                    <li><a href="#divCurso">Curso</a></li>
-                    <li><a href="#divMetodologia">Metodologia</a></li>
-                    <li><a href="#divContato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    @*Menu*@
+    <div style="position:fixed;top:0px;left:0px;width:100%;z-index:99;background-color: lightblue;">
+        <table>
+            <tr style="width:100%">
+                <td style="width:25%; text-align:center">
+                    <img src="~/Content/images/layout/logo.jpg" />
+                </td>
+                <td style="width:75%; text-align:right">
+                    <ul>
+                        <li><a href="#owl">HOME</a></li>
+                        <li><a href="#SobreNos">SOBRE NÓS</a></li>
+                        <li><a href="#Metodo">MÉTODO</a></li>
+                        <li><a href="#Video">VÍDEO</a></li>
+                        <li><a href="#TiposCurso">TIPOS DE CURSOS</a></li>
+                        <li><a href="#Curso">CURSO</a></li>
+                        <li><a href="#Metodologia">METODOLOGIA</a></li>
+                        <li><a href="#Intercambio">INTERCÂMBIO</a></li>
+                        <li><a href="#Contato">CONTATO</a></li>
+                    </ul>
+                </td>
+            </tr>
+        </table>        
     </div>   
+
     <div id="Container" class="wrap">
-        @RenderBody()    
+        @RenderBody()
         <br />
-        <center>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</center>   
-    </div>
+        <center>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</center>
+    </div>              
 
     @Html.Partial("Popup")
     @Scripts.Render("~/bundles/jquery")  
