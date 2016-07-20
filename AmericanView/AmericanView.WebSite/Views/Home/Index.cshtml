@@ -58,217 +58,258 @@
     </div>
 </div>
 
+<br />
 @*Números*@
 <div id="Resultados" style="margin:0 auto;background-color:wheat">
+    <br />
     <div class="row" style="width:100%; margin:0 auto;">
         <h1 class="topico" style="text-align:center; font-weight:bold">Nossos resultados</h1>
     </div>
+
     <br />
 
-    <h1 id="myTargetElement">0</h1>
-
+    <table class="row" style="width:100%; margin:0 auto;">
+        <tr style="width:100%;">
+            <td style="width:25%; text-align:center">
+                <h3>DESDE</h3>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h3>ALUNOS JÁ ESTUDARAM</h3>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h3>ESTIVERAM FORA DO PAÍS</h3>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h3>TUDO ISSO EM</h3>
+            </td>
+        </tr>
+        <tr style="width:100%;">
+            <td style="width:25%; text-align:center">
+                <h1 id="countDesde">0</h1>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h1 id="countEstudaram">0</h1>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h1 id="countForaPais">0</h1>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h1 id="countDuracao">0</h1><h1>meses</h1> 
+            </td>
+        </tr>
+    </table>
 </div>
 
-    @*Tipos Curso*@
-    <div id="TiposCurso" style="margin:0 auto;background-color:LightCyan">
-        <div class="row" style="width:100%; margin:0 auto;">
-            <h1 style="text-align:center; font-weight:bold">Tipos de Curso</h1>
+<br />
+
+@*Tipos Curso*@
+<div id="TiposCurso" style="margin:0 auto;background-color:LightCyan">
+    <br />
+    <div class="row" style="width:100%; margin:0 auto;">
+        <h1 style="text-align:center; font-weight:bold">Tipos de Curso</h1>
+    </div>   
+    <div class="row" style="width:100%; margin:0 auto;">
+        <div class="span3 tiny ">
+            <div class="pricing-table-header-tiny">
+                <h2>American View Standard</h2>
+                <h3>R$ 110,00 / mês</h3>
+            </div>
+            <div class="pricing-table-features">
+                <p>Jovens e adultos a partir de 12 anos de idade</p>
+                <p>Máximo de 5 alunos por sala</p>
+                <p>Duas horas semanais</p>
+                <p>30 meses (2 anos e meio)</p>
+                <p><strong> R$ 75,00 </strong>material</p>
+            </div>
         </div>
-        <br />
-        <div class="row" style="width:100%; margin:0 auto;">
-            <div class="span3 tiny ">
-                <div class="pricing-table-header-tiny">
-                    <h2>American View Standard</h2>
-                    <h3>R$ 110,00 / mês</h3>
-                </div>
-                <div class="pricing-table-features">
-                    <p>Jovens e adultos a partir de 12 anos de idade</p>
-                    <p>Máximo de 5 alunos por sala</p>
-                    <p>Duas horas semanais</p>
-                    <p>30 meses (2 anos e meio)</p>
-                    <p><strong> R$ 75,00 </strong>material</p>
-                </div>
+        <div class="span3 small">
+            <div class="pricing-table-header-small">
+                <h2>American View Premium</h2>
+                <h3>R$ 155,00 / mês</h3>
             </div>
-            <div class="span3 small">
-                <div class="pricing-table-header-small">
-                    <h2>American View Premium</h2>
-                    <h3>R$ 155,00 / mês</h3>
-                </div>
-                <div class="pricing-table-features">
-                    <p>Jovens e adultos a partir de 12 anos de idade</p>
-                    <p>Máximo de 5 alunos por sala</p>
-                    <p>Até 4 horas semanais</p>
-                    <p>18 meses (1 anos e meio)</p>
-                    <p><strong> R$ 95,00 </strong>material</p>
-                </div>
+            <div class="pricing-table-features">
+                <p>Jovens e adultos a partir de 12 anos de idade</p>
+                <p>Máximo de 5 alunos por sala</p>
+                <p>Até 4 horas semanais</p>
+                <p>18 meses (1 anos e meio)</p>
+                <p><strong> R$ 95,00 </strong>material</p>
             </div>
-            <div class="span3 medium">
-                <div class="pricing-table-header-medium">
-                    <h2>American View Kids</h2>
-                    <h3>R$ 155,00 / mês</h3>
-                </div>
-                <div class="pricing-table-features">
-                    <p>Crianças de 4 aos 10 anos</p>
-                    <p>Máximo de 7 alunos por sala</p>
-                    <p>2 horas semanais</p>
-                    <p>Curso anual de Janeiro a Dezembro</p>
-                    <p><strong> R$ 95,00 </strong>material</p>
-                </div>
+        </div>
+        <div class="span3 medium">
+            <div class="pricing-table-header-medium">
+                <h2>American View Kids</h2>
+                <h3>R$ 155,00 / mês</h3>
             </div>
-            <div class="span3 pro">
-                <div class="pricing-table-header-pro">
-                    <h2>TOEFL e TOEIC Test - Prep. / Apl.</h2>
-                    <h3>R$ 240,00 / mês</h3>
-                </div>
-                <div class="pricing-table-features">
-                    <p>Jovens e adultos após os dezoito meses. </p>
-                    <p>Certif. internacionais reconhecidas pelas multinacionais e univ. fora do país</p>
-                    <p>Máximo de 3 alunos por sala</p>
-                    <p>3 horas semanais</p>
-                    <p>6 meses</p>
-                </div>
+            <div class="pricing-table-features">
+                <p>Crianças de 4 aos 10 anos</p>
+                <p>Máximo de 7 alunos por sala</p>
+                <p>2 horas semanais</p>
+                <p>Curso anual de Janeiro a Dezembro</p>
+                <p><strong> R$ 95,00 </strong>material</p>
+            </div>
+        </div>
+        <div class="span3 pro">
+            <div class="pricing-table-header-pro">
+                <h2>TOEFL e TOEIC Test - Prep. / Apl.</h2>
+                <h3>R$ 240,00 / mês</h3>
+            </div>
+            <div class="pricing-table-features">
+                <p>Jovens e adultos após os dezoito meses. </p>
+                <p>Certif. internacionais reconhecidas pelas multinacionais e univ. fora do país</p>
+                <p>Máximo de 3 alunos por sala</p>
+                <p>3 horas semanais</p>
+                <p>6 meses</p>
             </div>
         </div>
     </div>
+</div>
 
+<br />
+
+@*American View Premium*@
+<div class="row" style="width:800px; margin:0 auto;">
+    <h1 class="title" style="text-align:center; font-weight:bold">American View Premium</h1>
     <br />
-
-    @*American View Premium*@
-    <div class="row" style="width:800px; margin:0 auto;">
-        <h1 class="title" style="text-align:center; font-weight:bold">American View Premium</h1>
-        <br />
-        <section id="curso" class="parallax" data-speed="3">
-            <div class="conteudo" style="width:800px; align-items:center; text-align:justify">
-                O produto principal da American View é o Premium, desenvolvido em três módulos realizados no tempo máximo de 18 meses. O curso é baseado em atividades que visam o desenvolvimento da fala, escrita, entendimento e leitura da língua inglesa.
-                Módulos do Premium:
-                <br /><br />
-                <strong>Módulo I - Essential Issue</strong>
-                <br />
-                O primeiro modulo é básico. Traz os conteúdos gramaticais e de vocabulário em 15 lições, três revisões e duas provas que deverão ser cumpridas em uma aula e meia cada, em média, totalizando aproximadamente 40 aulas.
-                Os conteúdos são apresentados em forma de exercícios de repetição de padrões gramaticais e de vocabulário em forma oral e escrita, compreensão de textos, listening practices e temas para desenvolvimento oral. Acompanha ainda CD de áudio ou de MP3, conforme opção do aluno.
-                <br /><br />
-                <strong>Módulo II - New Vision</strong><br />
-                Este nível intermediado, que compõe o segundo modulo, traz temas de debates orais, textos, expressões e gírias, proporcionando ao estudante a sensação e confiança no desenvolvimento de sua própria oralidade.
-                O conteúdo é composto de dez lições, uma revisão e uma prova, que levam em média duas aulas cada para serem transmitidas, totalizando 24 aulas.
-                Neste estágio é recomendado o número de duas aulas por semana,
-                já que o estudante terá uma redução significativa do volume de material de auto-estudo, diminuindo também o tempo necessário para a conclusão desta fase para 12 semanas.
-                Acompanha ainda CD de áudio ou MP3.
-                <br /><br />
-                <strong>Módulo III - Skills for Fluency</strong>
-                <br />
-                Nesse terceiro módulo, avançado, é praticamente voltado para as atividades orais e de entendimento. Esta parte do método está dividida em 20 lições e uma prova final, que levam aproximadamente uma aula e meia para serem estudadas.
-                Vale ressaltar que neste estágio do ensino ocorre a veiculação de filmes totalmente em inglês e sem legendas, transmitidos em uma aula cada, totalizando 40 aulas.
-                Neste estágio também é recomendado o número de duas aulas por semana, já que o estudante também terá uma redução significativa do volume de material de auto-estudo, diminuindo o tempo necessário para a conclusão desta fase em 20 semanas. A soma total do estudo dos três livros é igual a 72 semanas, o equivalente a dezoito meses (um ano e meio).
-                Além dos materiais descritos acima, serão apresentados durante o decorrer do curso vários materiais didáticos de apoio, dentre eles: filmes, vídeos, sites de internet, músicas e livros de contos em inglês, que deverão ser lidos durante a segunda e terceira fase do método. Todos os materiais extras serão oferecidos gratuitamente aos alunos.
-            </div>
-        </section>
-    </div>
-
-    <br />
-
-    @*Metodologia*@
-    <div id="Metodologia" class="row" style="background-color:lightgray">
-        <div class="row" style="width:800px; margin:0 auto">
+    <section id="curso" class="parallax" data-speed="3">
+        <div class="conteudo" style="width:800px; align-items:center; text-align:justify">
+            O produto principal da American View é o Premium, desenvolvido em três módulos realizados no tempo máximo de 18 meses. O curso é baseado em atividades que visam o desenvolvimento da fala, escrita, entendimento e leitura da língua inglesa.
+            Módulos do Premium:
+            <br /><br />
+            <strong>Módulo I - Essential Issue</strong>
             <br />
-            <h1 class="title" style="text-align:center; font-weight:bold">Metodologia</h1>
-            <div class="conteudo" style="text-align:center">
-                A American View utiliza-se de um sistema didático próprio, destinado a instruir os rudimentos da língua inglesa para alunos acima de 13 anos, no período de um ano e meio (18 meses).
-                Desenvolvido visando o máximo aprendizado no menor tempo presencial possível, ao termino do curso, o aluno está plenamente apto a falar, entender, escrever e ler as diversas formas de comunicação da língua inglesa.
-                A metodologia da American View transcende a sala de aula, portanto, além do conteúdo apresentado no decorrer das aulas o aluno deve manter a prática do estudo em casa, que consiste em realizar as atividades, revisar semanalmente os conteúdos das apostilas, mantendo o hábito de manter-se em contato com os vocabulários e verbos aprendidos. Rotina que garante os resultados desejados.
-                As frequências em sala de aula são adaptadas de acordo com a necessidade do aluno, porém, a recomendação é de uma aula semanal com uma hora de duração, com dois a três dias de auto-estudo para o desenvolvimento dos conteúdos ensinados.
-            </div>
+            O primeiro modulo é básico. Traz os conteúdos gramaticais e de vocabulário em 15 lições, três revisões e duas provas que deverão ser cumpridas em uma aula e meia cada, em média, totalizando aproximadamente 40 aulas.
+            Os conteúdos são apresentados em forma de exercícios de repetição de padrões gramaticais e de vocabulário em forma oral e escrita, compreensão de textos, listening practices e temas para desenvolvimento oral. Acompanha ainda CD de áudio ou de MP3, conforme opção do aluno.
+            <br /><br />
+            <strong>Módulo II - New Vision</strong><br />
+            Este nível intermediado, que compõe o segundo modulo, traz temas de debates orais, textos, expressões e gírias, proporcionando ao estudante a sensação e confiança no desenvolvimento de sua própria oralidade.
+            O conteúdo é composto de dez lições, uma revisão e uma prova, que levam em média duas aulas cada para serem transmitidas, totalizando 24 aulas.
+            Neste estágio é recomendado o número de duas aulas por semana,
+            já que o estudante terá uma redução significativa do volume de material de auto-estudo, diminuindo também o tempo necessário para a conclusão desta fase para 12 semanas.
+            Acompanha ainda CD de áudio ou MP3.
+            <br /><br />
+            <strong>Módulo III - Skills for Fluency</strong>
+            <br />
+            Nesse terceiro módulo, avançado, é praticamente voltado para as atividades orais e de entendimento. Esta parte do método está dividida em 20 lições e uma prova final, que levam aproximadamente uma aula e meia para serem estudadas.
+            Vale ressaltar que neste estágio do ensino ocorre a veiculação de filmes totalmente em inglês e sem legendas, transmitidos em uma aula cada, totalizando 40 aulas.
+            Neste estágio também é recomendado o número de duas aulas por semana, já que o estudante também terá uma redução significativa do volume de material de auto-estudo, diminuindo o tempo necessário para a conclusão desta fase em 20 semanas. A soma total do estudo dos três livros é igual a 72 semanas, o equivalente a dezoito meses (um ano e meio).
+            Além dos materiais descritos acima, serão apresentados durante o decorrer do curso vários materiais didáticos de apoio, dentre eles: filmes, vídeos, sites de internet, músicas e livros de contos em inglês, que deverão ser lidos durante a segunda e terceira fase do método. Todos os materiais extras serão oferecidos gratuitamente aos alunos.
         </div>
-    </div>
+    </section>
+</div>
 
-    <br />
+<br />
 
-    @*Intercâmbio*@
-    <div id="Intercambio" class="row" style="width:800px; margin:0 auto;">
-        <h1 class="title" style="text-align:center; font-weight:bold">Intercâmbio</h1>
+@*Metodologia*@
+<div id="Metodologia" class="row" style="background-color:lightgray">
+    <div class="row" style="width:800px; margin:0 auto">
+        <br />
+        <h1 class="title" style="text-align:center; font-weight:bold">Metodologia</h1>
         <div class="conteudo" style="text-align:center">
-            A American View trabalha em parceria com a Estudar no Exterior. Oferecemos desde de cursos de inglês em mais de 50 países, bem como graduações em diversas áreas e colegial.
-            <br />
-            Para maiores detalhes e orçamentos gratuitos acesse: <a href="http://estudarnoexterior.com.br/sp/americanview" target="_blank">Estudar no Exterior Intercâmbios</a>
+            A American View utiliza-se de um sistema didático próprio, destinado a instruir os rudimentos da língua inglesa para alunos acima de 13 anos, no período de um ano e meio (18 meses).
+            Desenvolvido visando o máximo aprendizado no menor tempo presencial possível, ao termino do curso, o aluno está plenamente apto a falar, entender, escrever e ler as diversas formas de comunicação da língua inglesa.
+            A metodologia da American View transcende a sala de aula, portanto, além do conteúdo apresentado no decorrer das aulas o aluno deve manter a prática do estudo em casa, que consiste em realizar as atividades, revisar semanalmente os conteúdos das apostilas, mantendo o hábito de manter-se em contato com os vocabulários e verbos aprendidos. Rotina que garante os resultados desejados.
+            As frequências em sala de aula são adaptadas de acordo com a necessidade do aluno, porém, a recomendação é de uma aula semanal com uma hora de duração, com dois a três dias de auto-estudo para o desenvolvimento dos conteúdos ensinados.
         </div>
     </div>
+</div>
 
-    <br />
+<br />
 
-    @*Contato*@
-    <div id="Contato" style="background-color:PaleGoldenRod;">
-        <div class="row" style="width:800px; margin:0 auto;">
-            <br />
-            <h1 class="title" style="text-align:center; font-weight:bold">Entre em contato conosco</h1>
-            <div class="conteudo" style="text-align:center">
-                American View é uma bem estabelecida escola de inglês, visando encurtar o tempo de ensino da língua inglesa com um investimento bem abaixo da média do mercado.
-            </div>
-        </div>
+@*Intercâmbio*@
+<div id="Intercambio" class="row" style="width:900px; margin:0 auto;">
+    <h1 class="title" style="text-align:center; font-weight:bold">Intercâmbio</h1>
+    <div class="conteudo" style="text-align:center">
+        A American View trabalha em parceria com a Estudar no Exterior.<br />
+        Oferecemos desde de cursos de inglês em mais de 50 países, bem como graduações em diversas áreas e colegial.<br />
+        Para maiores detalhes e orçamentos gratuitos acesse: <a href="http://estudarnoexterior.com.br/sp/americanview" target="_blank">Estudar no Exterior Intercâmbios</a>
+    </div>
+</div>
+
+<br />
+
+@*Contato*@
+<div id="Contato" style="background-color:PaleGoldenRod;">
+    <div class="row" style="width:800px; margin:0 auto;">
         <br />
-        <table style="width:100%">
-            <tr>
-                <td style="width:25%; text-align:center">
-                    <h2 class="tituloTabela" style="text-align:center">Endereço</h2>
-                    <div class="conteudoTabela" style="width: 100%; text-align:center;">
-                        <a style="text-align:center" href="http://maps.google.com/?q=1200 Avenida Adhemar de Barros, 1875 - Jardim dos Pássaros Guarujá - SP" target="_blank">Av. Adhemar de Barros, 1875 - Sala 2</a>
-                    </div>
-                </td>
-                <td style="width:25%; text-align:center">
-                    <h2 class="tituloTabela" style="text-align:center">Telefone</h2>
-                    <p class="conteudoTabela" style="text-align:center">+55 (13) 3025-6037</p>
-                </td>
-                <td style="width:25%; text-align:center">
-                    <h2 class="tituloTabela" style="text-align:center">E-mail</h2>
-                    <div class="conteudoTabela" style="width: 100%; text-align:center;">
-                        <a style="text-align:center" href="mailto:contato@americanview.com.br" target="_blank">contato@americanview.com.br</a>
-                    </div>
-                </td>
-                <td style="width:25%; text-align:center">
-                    <h2 class="tituloTabela" style="text-align:center">Facebook</h2>
-                    <div class="conteudoTabela" style="width: 100%; text-align:center;">
-                        <a style="text-align:center" href="https://web.facebook.com/americanviewidiomas" target="_blank">American View</a>
-                    </div>
-                </td>
-            </tr>
-        </table>
+        <h1 class="title" style="text-align:center; font-weight:bold">Entre em contato conosco</h1>
+        <div class="conteudo" style="text-align:center">
+            American View é uma bem estabelecida escola de inglês, visando encurtar o tempo de ensino da língua inglesa com um investimento bem abaixo da média do mercado.
+        </div>
     </div>
+    <br />
+    <table style="width:100%">
+        <tr>
+            <td style="width:25%; text-align:center">
+                <h2 class="tituloTabela" style="text-align:center">Endereço</h2>
+                <div class="conteudoTabela" style="width: 100%; text-align:center;">
+                    <a style="text-align:center" href="http://maps.google.com/?q=1200 Avenida Adhemar de Barros, 1875 - Jardim dos Pássaros Guarujá - SP" target="_blank">Av. Adhemar de Barros, 1875 - Sala 2</a>
+                </div>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h2 class="tituloTabela" style="text-align:center">Telefone</h2>
+                <p class="conteudoTabela" style="text-align:center">+55 (13) 3025-6037</p>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h2 class="tituloTabela" style="text-align:center">E-mail</h2>
+                <div class="conteudoTabela" style="width: 100%; text-align:center;">
+                    <a style="text-align:center" href="mailto:contato@americanview.com.br" target="_blank">contato@americanview.com.br</a>
+                </div>
+            </td>
+            <td style="width:25%; text-align:center">
+                <h2 class="tituloTabela" style="text-align:center">Facebook</h2>
+                <div class="conteudoTabela" style="width: 100%; text-align:center;">
+                    <a style="text-align:center" href="https://web.facebook.com/americanviewidiomas" target="_blank">American View</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
 
-    @section Scripts {
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#owl").owlCarousel({
-                    autoPlay: 3000,
-                    navigation: false,
-                    slideSpeed: 300,
-                    paginationSpeed: 400,
-                    singleItem: true
-                });
-
-                $("#video").simplePlayer();
-
-                $('.parallax').each(function () {
-                    var $obj = $(this);
-
-                    $(window).scroll(function () {
-                        var offset = $obj.offset();
-                        var yPos = -($(window).scrollTop() - offset.top) / $obj.data('speed');
-                        var bgpos = '50% ' + yPos + 'px';
-                        $obj.css('background-position', bgpos);
-                    });
-                });
-
+@section Scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#owl").owlCarousel({
+                autoPlay: 3000,
+                navigation: false,
+                slideSpeed: 300,
+                paginationSpeed: 400,
+                singleItem: true
             });
 
-            var options = {
-                useEasing : true, 
-                easingFn : null,
-                useGrouping : true, 
-                separator : '.', 
-                decimal : ',' 
-            };            
-            
-            var demo = new CountUp("myTargetElement", 0, 10000, 0, 10, options);
-            demo.start();
+            $("#video").simplePlayer();
 
-        </script>
-    }
+            $('.parallax').each(function () {
+                var $obj = $(this);
+
+                $(window).scroll(function () {
+                    var offset = $obj.offset();
+                    var yPos = -($(window).scrollTop() - offset.top) / $obj.data('speed');
+                    var bgpos = '50% ' + yPos + 'px';
+                    $obj.css('background-position', bgpos);
+                });
+            });
+
+        });
+
+        var options = {
+            useEasing : true, 
+            easingFn : null,
+            useGrouping : true, 
+            separator : '.', 
+            decimal : ',' 
+        };            
+            
+        var desde = new CountUp("countDesde", 0, 1997, 0, 10, options);
+        desde.start();
+
+        var estudaram = new CountUp("countEstudaram", 0, 10000, 0, 10, options);
+        estudaram.start();
+
+        var foraPais = new CountUp("countForaPais", 0, 2000, 0, 10, options);
+        foraPais.start();
+
+        var duracao = new CountUp("countDuracao", 0, 18, 0, 10, options);
+        duracao.start();
+    </script>
+}
 
