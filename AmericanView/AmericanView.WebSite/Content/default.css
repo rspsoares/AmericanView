@@ -431,14 +431,12 @@ body.md-skin{font-family:"Roboto", "Helvetica Neue", Helvetica, Arial, sans-seri
 }
 
 .owl-carousel div h2, .owl-carousel div .textoverlay{
-    position:absolute;
-    color:white;
-    font-size:xx-large;
-    font-weight:bolder;
+    position:absolute;    
+    font-size:50px;
     display:block;
-    margin-top:500px;
-    margin-left:30px;
+    margin-top:50px;
 }
+
 
 #video {
   position: relative;
