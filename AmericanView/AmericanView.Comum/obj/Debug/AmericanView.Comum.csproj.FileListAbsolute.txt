@@ -1,5 +1,0 @@
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Comum\bin\Debug\AmericanView.Comum.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Comum\bin\Debug\AmericanView.Comum.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Comum\obj\Debug\AmericanView.Comum.csprojResolveAssemblyReference.cache
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Comum\obj\Debug\AmericanView.Comum.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Comum\obj\Debug\AmericanView.Comum.pdb

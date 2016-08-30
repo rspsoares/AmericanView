@@ -1,6 +1,4 @@
-﻿using AmericanView.View.Authorization;
-using AmericanView.View.Models;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace AmericanView.View.Controllers
 {

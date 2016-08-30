@@ -1,0 +1,4 @@
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Infrastructure\bin\Debug\AmericanView.Permissoes.Infrastructure.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Infrastructure\bin\Debug\AmericanView.Permissoes.Infrastructure.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Infrastructure\obj\Debug\AmericanView.Permissoes.Infrastructure.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Infrastructure\obj\Debug\AmericanView.Permissoes.Infrastructure.pdb

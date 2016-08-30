@@ -1,0 +1,4 @@
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Application\bin\Debug\AmericanView.Permissoes.Application.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Application\bin\Debug\AmericanView.Permissoes.Application.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Application\obj\Debug\AmericanView.Permissoes.Application.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Application\obj\Debug\AmericanView.Permissoes.Application.pdb

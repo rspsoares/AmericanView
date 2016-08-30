@@ -1,5 +1,6 @@
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\jquery-ui\css.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\jquery-ui\jquery-ui.min.js
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\americanview-default.css
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\jquery\jquery-2.1.4.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\flot\curvedLines.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\flot\excanvas.min.js
@@ -14,6 +15,12 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.View.dll.config
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.View.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.View.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.Permissoes.Application.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.Ef.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.WebHost.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.CSharp.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.ComponentModel.DataAnnotations.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Configuration.dll
@@ -35,10 +42,15 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.Services.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Xml.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Xml.Linq.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.Permissoes.Application.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.Ef.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.WebHost.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.csprojResolveAssemblyReference.cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.Menu-lateral.resources
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.Properties.Resources.resources
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.csproj.GenerateResource.Cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.csprojResolveAssemblyReference.cache
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\americanview-default.css
