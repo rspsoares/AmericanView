@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Keeptrue.Conciliador.Relatorios.Application.Dto.GerencialCreditoDto>
+
+@{
+    ViewBag.Title = "ExecRel";
+}
+
+
+@*<!--
+    @section breadcrumbs{
+        <ol class="breadcrumb">
+            <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Empresa")" title="Matriz">Matriz</a></li>
+            <li>Cadastros</li>
+            <li class="active">Relatório Gerencial</li>
+        </ol>
+    }
+
+
+
+        @section scripts {
+            <script src="@Url.Content("/Content/js/app/Fechamento/Fechamento.js")" type="text/javascript"></script>
+            <script type="text/javascript">
+                /* -- Setar Class em expand menu -- */
+                window.onload = setActiveMenu;
+                function setActiveMenu() {
+                    $('li#usuarios').addClass('active');
+                    $('.mini-nav ul li#usuarios ul').attr('style', 'display: none !important;');
+                }
+
+
+            </script>
+        } *@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link href="~/Styles/StyleSheet1.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <form>
+            @foreach (var item in Model)
+            {
+                @Html.DisplayNameFor(model => model.Ordem)
+                @Html.DisplayFor(modelItem => item.Ordem)
+                @Html.DisplayFor(modelItem => item.Linha)
+                @Html.DisplayFor(modelItem => item.SPED)
+                @Html.DisplayFor(modelItem => item.Descricao)
+                @Html.DisplayFor(modelItem => item.Base)
+                @Html.DisplayFor(modelItem => item.Pis)
+                @Html.DisplayFor(modelItem => item.Cofins)
+                @Html.DisplayFor(modelItem => item.TribMI)
+                @Html.DisplayFor(modelItem => item.NTribMI)
+                @Html.DisplayFor(modelItem => item.NTribEx)
+                @Html.DisplayFor(modelItem => item.Tipo)
+                @Html.DisplayFor(modelItem => item.Totalizador)
+                @Html.DisplayFor(modelItem => item.Rateio)
+
+            }
+        </form>
+    </div>
+</body>
+</html>
+

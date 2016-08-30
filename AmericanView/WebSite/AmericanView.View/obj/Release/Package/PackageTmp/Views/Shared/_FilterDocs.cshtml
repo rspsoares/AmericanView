@@ -1,0 +1,270 @@
+﻿<div class="panel-group k-content" id="accordion" style="margin-right:35px">
+    <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFilter">
+            <h4 class="panel-title">
+                <small><span class="glyphicon glyphicon-chevron-right"></span></small> Filtros
+            </h4>
+        </div>
+        <div id="collapseFilter" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row">
+                    <form id="filter-form">
+                        <div class="col-lg-12 col-sm-12">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label><strong>Código da Matriz</strong></label>
+                                        <input id="txtCodMatriz" name="txtCodMatriz" class="filter" style="width: 100%;" data-required="true" />
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label><strong>Razão Social</strong></label>
+                                        <input id="txtRazaoSocial" name="txtRazaoSocial" class="k-textbox" style="width: 100%;" readonly="readonly" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label><strong>Período</strong></label>
+                                        <input id="ddlPeriodo" name="ddlPeriodo" class="filter" style="width: 100%;" data-required="true" />
+                                    </div>
+
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label><strong>Movimento</strong></label>
+                                        <input id="ddlMovimento" name="ddlMovimento" class="filter" style="width: 100%;" data-required="true" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>Numero</strong></label>
+                                        <input id="txtNumero" name="txtNumero" class="k-textbox" style="width: 100%;" />
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label><strong>DocNum</strong></label>
+                                        <input id="txtDocNum" name="txtDocNum" class="k-textbox" style="width: 100%;" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>Data de Emissão</strong></label>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <input id="dtEmiDe" name="dtEmiDe" class="filter" style="width: 100%;" />
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <strong>até</strong>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <input id="dtEmiAte" name="dtEmiAte" class="filter" style="width: 100%;" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label><strong>Data de Lançamento</strong></label>
+                                        <div class="row">
+                                            <div class="col-sm-5">
+                                                <input id="dtLancDe" name="dtLancDe" class="filter" style="width: 100%;" />
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <strong>até</strong>
+                                            </div>
+                                            <div class="col-sm-5">
+                                                <input id="dtLancAte" name="dtLancAte" class="filter" style="width: 100%;" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>Categoria da Nota</strong></label>
+                                        <input id="txtCatNota" name="txtCatNota" class="filter" style="width: 100%;" />
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label><strong>Código do Participante</strong></label>
+                                        <input id="txtCodigoCliente" name="txtCodigoCliente" class="k-textbox" style="width: 100%;" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>Material</strong></label>
+                                        <input id="txtMaterial" name="txtMaterial" class="k-textbox" style="width: 100%;" />
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label><strong>Grupo de Mercadoria</strong></label>
+                                        <input id="txtGrpMercadoria" name="txtGrpMercadoria" class="k-textbox" style="width: 100%;" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>CFOP</strong></label>
+                                        <input id="kmsCFOP" name="kmsCFOP" class="filter" style="width: 100%;" />
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <label><strong>CFOP Referência</strong></label>
+                                        <input id="kmsCFOPRef" name="kmsCFOPRef" class="k-textbox" style="width: 100%;" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>CST</strong></label>
+                                        <input id="txtCST" name="txtCST" class="k-textbox" style="width: 100%;" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label><strong>Total Item</strong></label>
+                                        <input id="txtTotalItem" name="txtTotalItem" value="0,00" class="k-textbox" style="width: 100%;text-align:right" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label><strong>Associado à Regras</strong></label>
+                                        <input id="ddlRegra" name="ddlRegra" class="filter" style="width: 100%;" data-required="true" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel-group k-content" id="accordionValidacoes" >
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" data-toggle="collapse" data-parent="#accordionValidacoes" href="#collapseFilterValidacoes">
+                                        <h4 class="panel-title">
+                                            <small><span class="glyphicon glyphicon-chevron-right"></span></small> Validações
+                                        </h4>
+                                    </div>
+                                    <div id="collapseFilterValidacoes" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-lg-12 col-sm-12">
+                                                    <div id="gridValidacoes"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <button type="button" id="btnPesquisarLogs" class="btn btn-success btn-xs" onclick="{ javascript: PesquisarDocs() };">
+                                            <span class="glyphicon glyphicon-search"></span> Pesquisar
+                                        </button>
+                                        <button type="button" id="btnLimparPequisa" class="btn btn-danger btn-xs" onclick="{ javascript: ClearForm(this) };">
+                                            <span class="glyphicon glyphicon-remove"></span> Limpar
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group pull-right">
+                                        <div class="row" style="margin-bottom: 15px;margin-right:25px;margin-left:0px;">
+                                            <label><strong>Visualização Completa &nbsp;</strong></label><input id="tipoVisualizacao" type="checkbox" data-field="tipoVisualizacao" checked data-on-text="<i class='glyphicon glyphicon-ok'></i>" data-off-text="<i class='glyphicon glyphicon-remove'></i>" data-size="small" data-on-color="primary" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="form-group">
+                                        <button type="button" id="btnFiltrosPersonalizados" class="btn btn-primary btn-xs pull-right">
+                                            <span class="glyphicon glyphicon-filter"></span> Filtros Personalizados
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function GetMatriz() {
+        var matrizList = $("#txtCodMatriz").kendoDropDownList({
+            optionLabel: "Selecione uma Matriz...",
+            dataTextField: "CodigoMatriz",
+            dataValueField: "Id",
+            dataSource: LoadDsMatrizes(),
+            select: onSelectMatriz
+        }).data("kendoDropDownList");
+    }
+
+    function onSelectMatriz(e) {
+        $('#txtRazaoSocial').val("");
+        var dataItem = this.dataItem(e.item);
+        $('#txtRazaoSocial').val(dataItem.RazaoSocial);
+    }
+
+    function Pesquisar() {
+        var countField = 0;
+        $('#filter-form input').each(function () {
+            if ($(this).data('required')) {
+                if ($(this).val() == "" || $(this).val().indexOf('Selecione') > -1) {
+                    $(this).parent().parent().children('label').attr('style', 'color: #ff0000;');
+                    countField++;
+                }
+                else {
+                    $(this).parent().parent().children('label').attr('style', 'color: #222222;');
+                }
+            }
+        });
+
+        if (countField > 0) {
+            var msg = "<p>Preencha os Campos Obrigatórios.</p>";
+            ShowModalAlerta(msg);
+        }
+        else {
+            var obj = GetObj();
+            BuscarDadosGrid(obj[0]);
+        }
+    }
+
+    function ClearForm(e) {
+        $("#grid").html("");
+        $("#grid").removeAttr("class");
+        $("#grid").removeAttr("data-role");
+
+        $("#gridValidacoes").html("");
+        $("#gridValidacoes").removeAttr("class");
+        $("#gridValidacoes").removeAttr("data-role");
+        // Limpar dados do Formulário
+        $('#idValidacao').val(0);
+
+        var dsClean = "";
+        $(this).trigger("reset");
+        var matrizList = $("#txtCodMatriz").data("kendoDropDownList");
+        matrizList.select(0);
+
+        var periodoList = $("#ddlPeriodo").data("kendoDropDownList");
+        periodoList.select(0);
+        periodoList.dataSource.data(dsClean);
+
+        var movimentoList = $("#ddlMovimento").data("kendoDropDownList");
+        movimentoList.select(0);
+        movimentoList.dataSource.data(dsClean);
+        $('#txtRazaoSocial').val('');
+        $('#txtNumero').val('');
+        $('#txtDocNum').val('');
+        $('#txtCatNota').data('kendoMultiSelect').value('');
+        $('#txtCodigoCliente').val('');
+        $('#txtMaterial').val('');
+        $('#txtGrpMercadoria').val('');
+        $('#txtCST').val('');
+        $('#txtValorItem').val('');
+        $('#kmsCFOP').data('kendoMultiSelect').value('');
+        $('#kmsCFOPRef').data('kendoMultiSelect').value('');
+        $('#dtEmiDe').data('kendoDatePicker').value('');
+        $('#dtEmiAte').data('kendoDatePicker').value('');
+        $('#dtLancDe').data('kendoDatePicker').value('');
+        $('#dtLancAte').data('kendoDatePicker').value('');
+    }
+</script>

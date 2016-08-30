@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "Assorciar Grupo x CNPJ";
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/cadastros/associar-grupo-cnpj.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#associar').addClass('active');
+            $('.mini-nav ul li#associar ul').attr('style', 'display: none !important;');
+        }
+        $(document).ready(function () {
+
+        });
+    </script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li>Cadastros</li>
+        <li class="active">Assorciar Grupo x CNPJ</li>
+    </ol>
+}
+
+<h1>Associar Grupo x CNPJ</h1>
+<br />
+
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col-sm-12">
+        @*<div id="grid"></div>*@
+    </div>
+</div>

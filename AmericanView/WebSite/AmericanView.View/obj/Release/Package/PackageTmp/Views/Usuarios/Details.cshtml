@@ -1,0 +1,100 @@
+﻿<div class="modal-content">
+    <div class="modal-header">
+        <center><h4 class="modal-title"><strong>Detalhes</strong></h4></center>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            @*Linhas 1*@
+            @*Nome*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" id="idNomeTxt" name="idNomeTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Usuário*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Usuário</label>
+                    <input type="text" id="idUsuarioTxt" name="idUsuarioTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Email*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" id="idEmailTxt" name="idEmailTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Linha 2*@
+            @*Perfil*@
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Perfil</label>
+                    <input type="text" id="idPerfilTxt" name="idPerfilTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Telefone*@
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Telefone</label>
+                    <input type="text" id="idTelefoneTxt" name="idTelefoneTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Linhas 3*@
+            @*Ativo*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Usuário Ativo</label>
+                    <input type="text" id="idAtivoTxt" name="idAtivoTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Bloqueado*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Usuário Bloqueado</label>
+                    <input type="text" id="idBloqueadoTxt" name="idBloqueadoTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Confirmado*@
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Conta confirmada</label>
+                    <input type="text" id="idConfirmadoTxt" name="idConfirmadoTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Linha 4*@
+            @*Data de Criação*@
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Data de criação do Usuário</label>
+                    <input type="text" id="idDtCreatedTxt" name="idDtCreatedTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+            @*Última modificação*@
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                <div class="form-group">
+                    <label>Data da última modificação do usuário</label>
+                    <input type="text" id="idDtUpdateTxt" name="idDtUpdateTxt" readonly="readonly" class="k-textbox" style="width: 100%;" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" id="btnReenvioEmail" class="btn btn-primary btn-xs" onclick="javascript: { ReenviarEmailUsuario(); }">
+            <span class="glyphicon glyphicon-envelope"></span> Reenviar confirmação
+        </button>
+        <button type="button" id="btnDesbloquearUsuario" class="btn btn-warning btn-xs" onclick="javascript:{SalvarCliente();}">
+            <span class="glyphicon glyphicon-refresh"></span> Desbloquear usuário
+        </button>
+        <button type="button" id="btnAtivarUsuario" class="btn btn-success btn-xs" onclick="javascript:{SalvarCliente();}">
+            <span class="glyphicon glyphicon-ok-circle"></span> Ativar usuário
+        </button>
+        <button type="button" id="btnDesativarUsuario" class="btn btn-danger btn-xs" onclick="javascript:{SalvarCliente();}">
+            <span class="glyphicon glyphicon-ban-circle"></span> Desativar usuário
+        </button>
+        <button type="button" id="btnFechar" class="btn btn-info btn-xs" onclick="javascript: { FecharModal(this); }">
+            Fechar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="pt-br" id="htmlpage">
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de Apuração de Impostos Mosaic." />
+    <meta name="keywords" content="Portal de Apuração, Impostos, mosaic, piscofins" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Apuração de Impostos - Mosaic" />
+    <meta name="url" content="www.keeptrue.com.br" />
+    @*<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />*@
+    <meta name="author" content="KeepTrue" />
+    <meta name="company" content="KeepTrue" />
+    <meta name="revisit-after" content="7" />
+    <link rev="made" href="mailto:suporte@keeptrue.com" />
+    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="refresh" content="@FormsAuthentication.Timeout.TotalSeconds;url=@FormsAuthentication.LoginUrl" />    
+    <title>..:: Portal de Apuração de Tributos - @ViewBag.Title ::..</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+</head>
+<body>
+    <div id="Container" class="wrap">
+        <div id="loading-page">
+            <div class="img-loading"><img src="@Url.Content("~/Content/images/layout/loading-page.gif")" /></div>
+        </div>
+        @* -- CABEÇALHO -- *@
+        <header id="HeaderContainer">
+            <div id="Header">
+                @* -- MENU RESPONSIVO -- *@
+                <!--Inicio menu responsivo-->
+                <div id="nav-menu-mobile">
+                    <img src="@Url.Content("~/Content/images/icones/ico-list-menu.png")" id="icone-lista" alt="" />
+                    <ul class="nav-list-mobile"></ul>
+                </div>
+                <div class="col-xs-12">
+                    @* -- APP NAME -- *@
+                    <div id="kt-appname">
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="@Url.Content("~/Content/images/layout/logo-mosaic.png")" title="Mosaic" alt="Mosaic" />
+                            <strong style="color:black;">DEMÉTRA - APURAÇÃO DE TRIBUTOS</strong>
+                        </a>
+                    </div>
+
+                    @* -- COMPONENTE LOGIN -- *@
+                    <div id="kt-navigation-content">
+                        <ul id="kt-nav" class="nav">
+                            <li class="light-blue-pepsi-nav">
+                                <a href="@Url.Action("Index", "Home")" title="Início">
+                                    <span>&nbsp;</span>
+                                    <span class="glyphicon glyphicon-home"></span>
+                                    <span>&nbsp;</span>
+                                </a>
+                            </li>
+                            @*<li class="orange-pepsi-nav">
+                                <a href="#" title="Dashboards">
+                                    <span>&nbsp;</span>
+                                    <span class="glyphicon glyphicon glyphicon-stats"></span>
+                                    <span>&nbsp;</span>
+                                </a>
+                            </li>
+                           *@
+                            @if (this.User.Identity.IsAuthenticated)
+                            {
+                                @*<li class="green-pepsi-nav">
+                                    <a href="#" title="Notificações">
+                                        <span>&nbsp;</span>
+                                        <span class="glyphicon glyphicon-envelope"></span>
+                                        <span class="badge badge-success">5</span>
+                                    </a>
+                                </li>*@
+                                <li class="light-grey-nav">
+                                    <a data-toggle="dropdown" data-noajax="true" class="dropdown-toggle" href="#">
+                                        <span>&nbsp;</span>
+                                        @*<span>@User.Identity.Name</span>*@
+                                        <span>@ViewBag.NomeUsuario</span>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                        <li><a data-noajax="true" href="@Url.Content("~/Login/UpdatePass")"><span class="glyphicon glyphicon-edit"></span> Alterar Senha</a></li>
+                                        <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+                                        <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-wrench"></span> Suporte ao Sistema</a></li>                                        
+                                        <li><a data-noajax="true" href="@Url.Content("~/Login/SignOut")"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+                                    </ul>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        @* -- FIM CABEÇALHO -- *@
+
+        <!-- Conteúdo -->
+        <div id="ContentContainer">
+            <!-- MENU LATERAL -->
+            <div id="Left-Container">
+                <div id="btnMinimizarMenuLateral" class="minimize-menu disable">
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+                </div>
+                <nav id="menuLateralLiteral" class="nav-menu">
+                    <ul class="nav-list"></ul>
+                </nav>
+            </div>
+            <!-- CONTAINER CONTENT -->
+            <div id="Center-Container">
+                @RenderSection("breadcrumbs", required: false)
+                @*<div class="col-xs-12">
+                    <div class="form-group">
+                        <label class="control-label" id="labelCNPJ" for="selectCNPJ" hidden>CNPJ: </label>
+                        <select id="selectCNPJ" data-placeholder="Escolha ..." style="width: 50%" hidden></select>
+                    </div>
+                </div>*@
+                <div class="col-xs-12">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <div id="FooterContainer">
+        <div id="Footer">
+            <div class="col-xs-12">
+                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
+                <a href="http://www.keeptrue.com" target="_blank">
+                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @Html.Partial("Popup")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryValidate")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/js-mosaic")
+    @RenderSection("scripts", required: false)
+    @RenderSection("Styles", required: false)
+</body>
+</html>

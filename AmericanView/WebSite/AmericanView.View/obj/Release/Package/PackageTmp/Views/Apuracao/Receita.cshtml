@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Regras de Apuração de Receita";
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/apuracao/receita.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/edit-regra-receita.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/create-condicao-receita.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/apuracaoCFOPRef.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#configApurRec').addClass('active');
+            $('.mini-nav ul li#configApurRec ul').attr('style', 'display: none !important;');
+        }
+
+        $(document).ready(function () {
+            $('#txtTipoApuracao').parent().parent().html("");
+            //$('#txtTipoImposto').attr('data-required', 'true');
+            GetMatriz();
+            //GetImpostos();
+            // Criar Condição
+            CFOPReceita();
+            CFOPRef();
+            CSTReceita();
+            $('#collapseFilter').collapse('show');
+            $('#accordion .panel .panel-heading').children('h4').children('small').children('span').removeAttr('class');
+            $('#accordion .panel .panel-heading').children('h4').children('small').children('span').attr('class', 'glyphicon glyphicon-chevron-down');
+        });
+    </script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li>Configurações</li>
+        <li class="active">Regras de Apuração de Receita</li>
+    </ol>
+}
+
+<h1>Regras de Apuração de Receita</h1>
+<br />
+
+@Html.Partial("_FilterApuracoes")
+
+<div class="row" style="margin-bottom: 15px;margin-right:0px">
+    <div class="col-sm-12">
+        <div id="grid"></div>
+    </div>
+</div>
+
+@* -- Popup de Criar Condicoes -- *@
+<div id="modalCreateReceita" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="javascript: { FecharModalParam(this); }"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><strong>Condição</strong></h4>
+            </div>
+            <div class="modal-body" style="height: 600px; overflow-y: auto;">
+                @Html.Partial("~/Views/Apuracao/CreateCondicaoReceita.cshtml")
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-primary btn-xs" onclick="javascript: { SalvarCondicao(this); }">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+                <button type="button" id="btnVoltar" class="btn btn-danger btn-xs" onclick="javascript: { FecharModalParam(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* -- Popup de Editar Regras -- *@
+<div id="modalViewReceita" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>                
+                <h4 class="modal-title"><strong>Edição de Regra de Receita</strong></h4>
+            </div>
+            <div class="modal-body" style="height: 600px; overflow-y: auto;">
+                @Html.Partial("~/Views/Apuracao/EditRegraReceita.cshtml")
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-danger btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

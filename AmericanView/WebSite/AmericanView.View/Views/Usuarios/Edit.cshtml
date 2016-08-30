@@ -1,0 +1,96 @@
+﻿@*<div class="modal-content">
+    <div class="modal-header">
+        <center><h4 class="modal-title"><strong>Editar Usuário</strong></h4></center>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div id="loading-page-edit">
+                <div class="img-loading"><img src="@Url.Content("~/Content/images/layout/loading-page.gif")" /></div>
+            </div>
+            <input type="hidden" id="userKey" value='@ViewBag.uqKeyUser' />
+            <input type="hidden" id="userUqKey" />
+            <input type="hidden" id="isClienteEdit" value="0" />
+            <form id="userFormEdit">
+                <div class="col-xs-12">
+                    @*1ª Linha*@
+                    @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="txtNameEdit">Nome</label> <br />
+                            <input type="text" class="k-textbox" id="txtNameEdit" name="txtNameEdit" placeholder="Nome completo" style="width: 100%" minlength="2" required>
+                        </div>
+                    </div>*@
+                    @*2ª Linha*@
+                    @*<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="txtLoginEdit">Login</label> <br />
+                            <input type="text" class="k-textbox" id="txtLoginEdit" name="txtLoginEdit" placeholder="Login" style="width: 100%" minlength="2" required>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="txtEmailEdit">E-Mail</label> <br />
+                            <input type="text" class="k-textbox" id="txtEmailEdit" name="txtEmailEdit" placeholder="E-mail" style="width: 100%" required>
+                        </div>
+                    </div>*@
+                    @*3ª Linha*@
+                    @*<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="txtPhoneEdit">Telefone</label> <br />
+                            <input type="text" class="k-textbox" id="txtPhoneEdit" name="txtPhoneEdit" placeholder="Telefone" style="width: 100%">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="selectStatusUsrEdit">Estado</label> <br />
+                            <input id="selectStatusUsrEdit" type="checkbox" data-field="selectStatusUsrEdit" checked data-on-text="ATIVO" data-off-text="INATIVO" data-size="small" style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="selectProfileUsrEdit">Perfil</label> <br />
+                            <input id="selectProfileUsrEdit" data-field="selectProfileUsrEdit" style="width: 100%;" class="filter" required />
+                        </div>
+                    </div>*@
+                    @*4ª Linha*@
+                    @*<div class="col-lg-10 col-md-10 col-sm-6 col-xs-6" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="selectInscrlUsrEdit">Holding</label> <br />
+                            <input id="selectInscrlUsrEdit" data-field="selectInscrlUsrEdit" style="width: 100%;" class="filter" />
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6" style="padding-bottom: 0px;">
+                        <label></label>
+                        <input type="button" class="btn btn-default btn-xs" id="btnAccountSearchEdit" style="width: 100%;" value="Pesquisar" disabled />
+                    </div>*@
+                    @*5ª Linha*@
+                    @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div id="gridGroupAccount" style="display: none"></div>
+                    </div>*@
+                    @*6ª Linha*@
+                    @*<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label for="selectGroupUsrEdit">Grupos de Empresas</label> <br />
+                            <select id="selectGroupUsrEdit" data-field="selectGroupUsrEdit" style="width: 100%;" multiple="multiple" data-placeholder="Escolha ..."></select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>*@
+    @*<div class="modal-footer">
+        <button type="button" id="btnUpdateEdit" class="btn btn-success btn-xs" onclick="javascript: { UpdateUserEditing(); }">
+            <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+        </button>
+        <button type="button" id="btnCloseEdit" class="btn btn-default btn-xs" onclick="javascript: { $('#editarUsuarioModal').modal('hide'); }">
+            <span class="glyphicon glyphicon-remove"></span> Cancelar
+        </button>
+    </div>
+</div>*@
+
+@*<script src="/Content/js/app/cadastros/usuarios/edit.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#selectStatusUsrEdit').bootstrapSwitch();
+        LoadComponentsForUserEditing();
+    });
+</script>*@

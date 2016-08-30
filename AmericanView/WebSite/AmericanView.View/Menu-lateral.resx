@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="associar" xml:space="preserve">
+    <value>{
+                "id": "associar",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": false,
+                "name": "Assorciar Grupo x CNPJ",
+                "link": "/Grupos/Associar",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cadastros" xml:space="preserve">
+    <value>{
+        "id": "cadastros",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Cadastros",
+        "link": "#",
+        "icon": "glyphicon-edit",
+        "subMenu": [</value>
+  </data>
+  <data name="cadmatriz" xml:space="preserve">
+    <value>{
+                "id": "cadmatriz",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Matriz",
+                "link": "/Empresa",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configuracoes" xml:space="preserve">
+    <value>{
+        "id": "configuracoes",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Configurações",
+        "link": "#",
+        "icon": "glyphicon glyphicon-list-alt",
+        "subMenu": [</value>
+  </data>
+  <data name="dashboard" xml:space="preserve">
+    <value>{
+        "id": "dashboard",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": false,
+        "name": "Dashboard",
+        "link": "#",
+        "icon": "glyphicon-stats",
+        "subMenu": []
+    }</value>
+  </data>
+  <data name="analises" xml:space="preserve">
+    <value>{
+        "id": "devolucoes",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Análises",
+        "link": "#",
+        "icon": "glyphicon glyphicon-book",
+        "subMenu": [</value>
+  </data>
+  <data name="grupos" xml:space="preserve">
+    <value>{
+                "id": "grupos",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Grupos de Empresas",
+                "link": "/Grupos",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="home" xml:space="preserve">
+    <value>{
+        "id": "historico",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Principal",
+        "link": "/Home",
+        "icon": "glyphicon glyphicon-home",
+        "subMenu": []
+    }</value>
+  </data>
+  <data name="InsercaoSaldos" xml:space="preserve">
+    <value>{
+                "id": "valores-manuais",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Inserção de Saldos",
+                "link": "/ValoresManuais",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="mensagens" xml:space="preserve">
+    <value>{
+                "id": "mensagens",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": false,
+                "name": "Mensagens",
+                "link": "/Mensagens",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="perfil" xml:space="preserve">
+    <value>{
+                "id": "perfil",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Perfis",
+                "link": "/Perfil",
+                "icon": ""
+}</value>
+  </data>
+  <data name="permissoes" xml:space="preserve">
+    <value>{
+                "id": "permissoes",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Permissões",
+                "link": "/Permissoes",
+                "icon": ""
+}</value>
+  </data>
+  <data name="relatorios" xml:space="preserve">
+    <value>{
+                "id": "relatorios",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Relatórios",
+                "link": "/Relatorios",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="sistema" xml:space="preserve">
+    <value>{
+        "id": "utilidades",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Utilidades",
+        "link": "#",
+        "icon": "glyphicon-wrench",
+        "subMenu": [</value>
+  </data>
+  <data name="teste" xml:space="preserve">
+    <value>[ 
+   {
+        "id": "configuracoes",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Configurações",
+        "link": "/Config",
+        "icon": "glyphicon-cog",
+        "subMenu": []
+    }
+]</value>
+  </data>
+  <data name="cadusuarios" xml:space="preserve">
+    <value>{
+                "id": "usuarios",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Usuários",
+                "link": "/Usuarios",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="validacoes" xml:space="preserve">
+    <value>{
+                "id": "validacoes",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Validações",
+                "link": "/Validacoes",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="fechamentos" xml:space="preserve">
+    <value>{
+                "id": "fechamentos",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Fechamentos",
+                "link": "/Fechamento",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configApurCred" xml:space="preserve">
+    <value>{
+                "id": "configApurCred",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Apuração de Crédito",
+                "link": "/Apuracao/Credito",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configApurRec" xml:space="preserve">
+    <value>{
+                "id": "configApurRec",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Apuração de Receita",
+                "link": "/Apuracao/Receita",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configLogs" xml:space="preserve">
+    <value>{
+                "id": "configLogs",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Logs",
+                "link": "/_Logs/Index",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cruzamentos" xml:space="preserve">
+    <value>{
+        "id": "cruzamentos",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "EFD",
+        "link": "#",
+        "icon": "glyphicon glyphicon-indent-right",
+        "subMenu": [</value>
+  </data>
+  <data name="cruzcarga" xml:space="preserve">
+    <value>{
+                "id": "cruzcarga",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Carga",
+                "link": "/EFD/Carga",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cruzlogs" xml:space="preserve">
+    <value>{
+                "id": "cruzlogs",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Logs",
+                "link": "/EFD/Logs",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cruztarefa" xml:space="preserve">
+    <value>{
+                "id": "cruztarefas",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Tarefas",
+                "link": "/EFD/Tarefas",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="sisconfiggeral" xml:space="preserve">
+    <value>{
+                "id": "tarefas",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Exportação de Dados",
+                "link": "/Jobs",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="documentosfiscais" xml:space="preserve">
+    <value>{
+        "id": "docsfiscais",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Documentos Fiscais",
+        "link": "/DocumentosFiscais",
+        "icon": "glyphicon glyphicon-duplicate",
+        "subMenu": []
+    }</value>
+  </data>
+  <data name="saldosiniciais" xml:space="preserve">
+    <value>{
+                "id": "saldosiniciais",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Saldos Iniciais",
+                "link": "/SaldosIniciais",
+                "icon": ""
+            }</value>
+  </data>
+</root>

@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Carga";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/cruzamento/carga/carga.js")" type="text/javascript"></script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home", new { area = ""})" title="Home">Home</a></li>
+        <li class="active">Carga</li>
+    </ol>
+}
+
+<h1>Carga de Arquivos de Contribuições</h1>
+<br />
+
+<p>O formato aceito de arquivo é .txt</p>
+
+<div>
+    <input name="files" id="files" type="file" />
+</div>
+
+<style>
+    div.k-dropzone {
+        border: solid 1px #000;
+        line-height: 150px;
+        text-align: center;
+    }
+
+    div.k-dropzone .k-upload-button{
+        /*float: right !important;*/
+        bottom: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    div.k-dropzone em {
+        visibility: visible;
+        color: black;
+    }
+</style>

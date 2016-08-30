@@ -1,0 +1,62 @@
+﻿<div class="form-group">
+    <div class="row">
+        <input id="txtIdRegra" name="txtIdRegra" type="hidden" />
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+            <div class="col-sm-2">
+                <label><strong>Código da Regra</strong></label>
+                <input id="txtCodRegra" name="txtCodRegra" class="k-textbox" style="width: 100%;" readonly="readonly" />
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+            <div class="col-sm-2">
+                <label><strong>Código da Matriz</strong></label>
+                <input id="txtCodMatrizEdit" name="txtCodMatrizEdit" class="k-textbox" style="width: 100%;" readonly="readonly" />
+            </div>
+            <div class="col-sm-10">
+                <label><strong>Razão Social</strong></label>
+                <input id="txtDescMatriz" name="txtDescMatriz" class="k-textbox" style="width: 100%;" readonly="readonly" />
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+            <div class="col-sm-2">
+                <label><strong>Tipo do Tributo</strong></label>
+                <input id="txtTipoImpostoEdit" name="txtTipoImpostoEdit" class="k-textbox" style="width: 100%;text-align:left;" readonly="readonly" />
+            </div>
+            <div class="col-sm-10">
+                <label><strong>Descrição do Tributo</strong></label>
+                <input id="txtDescTipoImposto" name="txtDescTipoImposto" class="k-textbox" style="width: 100%;text-align:left;" readonly="readonly" />
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+            <div class="col-sm-2">
+                <label><strong>Natureza da Receita</strong></label>
+                <input id="txtNaturezaReceita" name="txtNaturezaReceita" class="k-textbox" style="text-align:left;width: 100%;" readonly="readonly" />
+            </div>
+            <div class="col-sm-10">
+                <label><strong>Descrição da Natureza da Receita</strong></label>
+                <input id="txtDescNaturezaReceita" name="txtDesctxtNaturezaReceita" class="k-textbox" style="text-align:left;width: 100%;" readonly="readonly" />
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+            <div class="col-sm-2">
+                <label><strong>Tipo Mosaic</strong></label>
+                <input id="txtTipoMosaic" name="txtTipoMosaic" class="k-textbox" style="width: 100%;text-align:left;" readonly="readonly" />
+            </div>
+            <div class="col-sm-10">
+                <label><strong>Descrição</strong></label>
+                <input id="txtDescTipoMosaic" name="txtDescTipoMosaic" class="k-textbox" style="width: 100%;text-align:left;" readonly="readonly" />
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 15px; margin-top: 15px;">
+        <div class="col-sm-12" style="text-align: right;">
+            <button class="btn btn-primary btn-xs" onclick="javascript: { OpenModalCreate() };"><span class="glyphicon glyphicon-plus"></span> Novo</button>
+            <button class="btn btn-danger btn-xs" onclick="javascript: { ExcluirCondicoes() };"><span class="glyphicon glyphicon-trash"></span> Excluir</button>
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 15px;">
+        <div class="col-sm-12">
+            <div id="gridEdit"></div>
+        </div>
+    </div>
+</div>

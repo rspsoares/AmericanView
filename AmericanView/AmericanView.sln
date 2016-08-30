@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.WebSite", "AmericanView.WebSite\AmericanView.WebSite.csproj", "{5E364099-0B35-4415-9BE2-FCA77811F30A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSite", "WebSite", "{1AD6F114-F602-4126-A01F-5BF6DDDC3332}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.WebSite", "WebSite\AmericanView.WebSite\AmericanView.WebSite.csproj", "{5E364099-0B35-4415-9BE2-FCA77811F30A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.View", "WebSite\AmericanView.View\AmericanView.View.csproj", "{55B8F84F-014A-43BF-A993-479CD677A781}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,11 +19,16 @@ Global
 		{5E364099-0B35-4415-9BE2-FCA77811F30A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E364099-0B35-4415-9BE2-FCA77811F30A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E364099-0B35-4415-9BE2-FCA77811F30A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B8F84F-014A-43BF-A993-479CD677A781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B8F84F-014A-43BF-A993-479CD677A781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B8F84F-014A-43BF-A993-479CD677A781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B8F84F-014A-43BF-A993-479CD677A781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5E364099-0B35-4415-9BE2-FCA77811F30A} = {1AD6F114-F602-4126-A01F-5BF6DDDC3332}
+		{55B8F84F-014A-43BF-A993-479CD677A781} = {1AD6F114-F602-4126-A01F-5BF6DDDC3332}
 	EndGlobalSection
 EndGlobal

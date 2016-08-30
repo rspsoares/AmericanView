@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "Analítico";
+}
+
+<style type="text/css">
+    #topBar, #sidebar1, #sidebar2 /*, #sidebar3*/ {
+        display: table-cell;
+        margin: 0;
+        vertical-align: top;
+    }
+</style>
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li><a href="@Url.Action("Index", "Relatorios")" title="Validacoes">Relatórios</a></li>
+        <li class="active">Analítico</li>
+    </ol>
+}
+
+<div style="float: left;margin-right:35px">
+    <button type="button" id="btnVoltar" class="btn btn-primary btn-xs" onclick="javascript: history.back();">
+        <span class="glyphicon glyphicon-arrow-left"></span> Voltar
+    </button>
+</div>
+
+<br />
+
+<div id="destaq-panels" class="row">
+    <div id="topBar" class="col-xs-12"></div>
+</div>
+
+<div id="content-panels" class="row">
+    <div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#tbCreditoContent" aria-controls="tbCreditoContent" role="tab" data-toggle="tab">CRÉDITO</a></li>            
+            <li role="presentation"><a href="#tbReceitaContent" aria-controls="tbReceitaContent" role="tab" data-toggle="tab">DÉBITO</a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tbCreditoContent" style="padding-left: 10px; padding-top: 10px; padding-right: 10px;">
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tbReceitaContent" style="padding-left: 10px; padding-top: 10px; padding-right: 10px;">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="modalDocumentosFiscais" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="javascript: { FecharModal(this); }" aria-hidden="true">×</button>
+                <center><h4 class="modal-title"><strong></strong></h4></center>
+            </div>
+            <div class="modal-body">
+                <div class="row" style="margin-left: 10px;">
+                    <div class="form-group">
+                    </div>
+                </div>
+                <div id="gridDocumentosFiscaisAnalitico"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancelar" class="btn btn-success btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+    @*<script src="@Url.Content("/Content/js/app/relatorios/relatorio.js")" type="text/javascript"></script>*@
+    <script src="@Url.Content("/Content/js/app/relatorios/analitico.js")" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#usuarios').addClass('active');
+            $('.mini-nav ul li#usuarios ul').attr('style', 'display: none !important;');
+        }
+        $(document).ready(function () {
+            CarregaComponentesAnalitico();
+        });
+    </script>
+
+}
+

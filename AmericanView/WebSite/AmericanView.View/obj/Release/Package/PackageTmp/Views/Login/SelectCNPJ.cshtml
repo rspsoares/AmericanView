@@ -1,0 +1,137 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br" id="htmlpage" ng-app>
+<head>
+    <!-- META TAGS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal de devolução para clientes da PepsiCo." />
+    <meta name="keywords" content="Portal de Devolução, Pepsico, portal, devolução" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="title" content="Portal de Devoluções - PepsiCo" />
+    <meta name="url" content="www.keeptrue.com.br" />
+    @*<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />*@
+    <meta name="author" content="KeepTrue" />
+    <meta name="company" content="KeepTrue" />
+    <meta name="revisit-after" content="7" />
+    <link rev="made" href="mailto:suporte@keeptrue.com" />
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <title>..:: Portal de Devoluções PepsiCo - Selecionar CNPJ ::..</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+
+    <style type="text/css">
+        html {
+            background: none;
+        }
+
+        @@media only screen and (max-width: 767px) {
+            #HeaderContainer {
+                min-height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="Container" class="wrap">
+        @* -- CABEÇALHO -- *@
+        <header id="HeaderContainer">
+            <div id="Header">
+                <div class="col-xs-12">
+                    @* -- APP NAME -- *@
+                    <div id="kt-appname">
+                        <a href="@Url.Action("Index", "Home")">
+                            <img src="@Url.Content("~/Content/images/layout/logo-mosaic.png")" title="PepsiCo" alt="PepsiCo" />
+                        </a>
+                    </div>
+
+                    @* -- COMPONENTE LOGIN -- *@
+                    <div id="kt-navigation-content">
+                        <ul id="kt-nav" class="nav">
+                            <li class="light-grey-nav">
+                                <a data-toggle="dropdown" data-noajax="true" class="dropdown-toggle" href="#">
+                                    <span>&nbsp;</span>
+                                    <span>Julio.Oliveira</span>
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                    <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        @* -- FIM CABEÇALHO -- *@
+
+        <!-- Conteúdo -->
+        <div id="ContentContainer">
+            <!-- CONTAINER CONTENT -->
+            <div id="Center-Container">
+                <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 10px;">
+                    <div class="legend">Selecionar CNPJ</div>
+
+                    <div class="control-group well">
+                        <form id="FormLogin">
+                            <div class="form-group">
+                                <select id="selectCNPJ" data-placeholder="Escolha ..." style="width: 100%;"></select>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok"></span> Continuar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rodapé -->
+    <div id="FooterContainer">
+        <div id="Footer">
+            <div class="col-xs-12">
+                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
+                <a href="http://www.keeptrue.com" target="_blank">
+                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/kendo")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/js-pepsico")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            CNPJUserPortal();
+        });
+
+        function CNPJUserPortal() {
+            var dataCNPJ = [{ CNPJ: "52.585.475/0001-90", CNPJValue: "52585475000190" },
+                    { CNPJ: "44.341.875/0001-22", CNPJValue: "44341875000122" },
+                    { CNPJ: "16.837.867/0001-36", CNPJValue: "16837867000136" },
+                    { CNPJ: "66.163.421/0001-41", CNPJValue: "66163421000141" },
+                    { CNPJ: "24.826.354/0001-58", CNPJValue: "24826354000158" },
+                    { CNPJ: "78.283.167/0001-02", CNPJValue: "78283167000102" }
+            ];
+
+            $("#selectCNPJ").kendoDropDownList({
+                placeholder: "Escolha ...",
+                dataTextField: "CNPJ",
+                dataValueField: "CNPJValue",
+                dataSource: dataCNPJ
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+﻿@{
+    ViewBag.Title = "Grupos";
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/cadastros/grupos/grupos.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#grupos').addClass('active');
+            $('.mini-nav ul li#grupos ul').attr('style', 'display: none !important;');
+        }
+
+        $(document).ready(function () {
+            CarregaComponentes();         
+        });
+    </script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li>Cadastros</li>
+        <li class="active">Grupos de Empresas</li>
+    </ol>
+}
+
+<h1>Grupos de Empresas</h1>
+<br />
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFilter">
+            <h4 class="panel-title">
+                <small><span class="glyphicon glyphicon-chevron-right"></span></small> Filtros
+            </h4>
+        </div>
+        <div id="collapseFilter" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row">
+                    <form>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label><strong>Nome</strong></label>
+                                        <input type="text" id="txtNome" name="txtNome" data-field="Nome" data-operator="contains" placeholder="Nome" class="k-textbox filter" style="width: 100%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label><strong>Descrição</strong></label>
+                                        <input type="text" id="txtDesc" name="txtDesc" data-field="Descricao" data-operator="contains" placeholder="Descrição" class="k-textbox filter" style="width: 100%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <button type="button" id="btnPesquisarGrupos" class="btn btn-success btn-xs">
+                                    <span class="glyphicon glyphicon-search"></span> Pesquisar
+                                </button>
+                                <button type="button" id="btnLimparPequisa" class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-remove"></span> Limpar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col-sm-12" style="height: 38px;">
+        <button type="button" id="btSelecionarInscricao" class="btn btn-primary btn-xs" onclick="javascript: { $('#modalInscricoes').modal({ backdrop: 'static', keyboard: false }); }" style="float: left; margin-bottom: 10px;" hidden>
+            <span class="glyphicon glyphicon-repeat"></span> Selecionar Holding
+        </button>
+        <label id="lbInscricaoSelecionada" style="padding-left:10px; font-size:14px" hidden> Favor selecionar uma Holding.</label>
+        <button type="button" id="btnNewGroup" class="btn btn-success btn-xs" onclick="javascript: { IncluirGrupo(); }" style="float: right; margin-bottom: 10px;margin-left: 10px;margin-right: 10px;">
+            <span class="glyphicon glyphicon-plus-sign"></span> Incluir
+        </button>
+    </div>
+    <div class="col-sm-12">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<input type="hidden" id="tbIdInscricao" value="0" />
+
+@* -- Popup de Create/Edit Grupo -- *@
+<div id="modalEditGrupo" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">                
+                <center><h4 class="modal-title"><strong></strong></h4></center>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <form id="groupForm">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                            <input type="hidden" id="idTxt" name="idTxt" />
+                            <div class="form-group">
+                                <label>Nome</label>
+                                <input type="text" id="nomeTxt" name="nomeTxt" class="k-textbox" style="width: 100%;" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                            <div class="form-group">
+                                <label>Descrição</label>
+                                <input type="text" id="descTxt" name="descTxt" class="k-textbox" style="width: 100%;" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                            <div class="form-group">
+                                <label>Empresas</label>
+                                <select id="empresasTxt" multiple="multiple" class="kt-multipleSelect" style="width: 100%;"></select>
+                                <button type="button" id="btAdicionarCliente" class="btn btn-success btn-xs" onclick="javascript: { AdicionarCliente(); }" style="float: right; margin-top: 10px;">
+                                    <span class="glyphicon glyphicon-plus-sign"></span> Adicionar
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                            <div class="form-group">
+                                <label>Empresas Selecionadas</label>
+                                <select id="empresasSelectTxt" multiple="multiple" class="kt-multipleSelect" style="width: 100%;"></select>
+                                <button type="button" id="btRemoverCliente" class="btn btn-danger btn-xs" onclick="javascript: { RemoverCliente(); }" style="float: right; margin-top: 10px;">
+                                    <span class="glyphicon glyphicon-remove-sign"></span> Remover
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-success btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-arrow-left"></span> Voltar
+                </button>
+                <button type="button" id="btnEditar" class="btn btn-warning btn-xs" onclick="javascript: { EditarVisualizacaoGrupo(); }">
+                    <span class="glyphicon glyphicon-pencil"></span> Editar
+                </button>
+                <button type="button" id="btnCancelar" class="btn btn-danger btn-xs" onclick="javascript: { VerificarCancelarEdicao(); }">
+                    <span class="glyphicon glyphicon-remove"></span> Cancelar
+                </button>
+                <button type="button" id="btnSalvar" class="btn btn-success btn-xs">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCancelarEdicao" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">                
+                <center><h4 class="modal-title">Cancelar alterações</h4></center>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancelar" class="btn btn-danger btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Não
+                </button>
+                <button type="button" id="btnOk" class="btn btn-success btn-xs" onclick="javascript: { $('#modalCancelarEdicao').modal('hide'); $('#modalEditGrupo').modal('hide'); }">
+                    <span class="glyphicon glyphicon-ok"></span> Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@* -- Popup de Info Grupo -- *@
+@*<div id="modalInfoGrupo" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="javascript: { FecharModal(this); }" aria-hidden="true">×</button>
+                <center><h4 class="modal-title"><strong>Informações do Grupo</strong></h4></center>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <input type="hidden" id="idTxtInfo" name="idTxtInfo" />
+                        <div class="form-group">
+                            <label>Nome do Grupo</label>
+                            <input type="text" id="inomeTxt" name="inomeTxt" class="k-textbox" style="width: 100%;" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label>Usuário criador</label>
+                            <input type="text" id="iusuarioTxt" name="iusuarioTxt" class="k-textbox" style="width: 100%;" readonly />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label>Descrição do Grupo</label>
+                            <input type="text" id="idescTxt" name="idescTxt" class="k-textbox" style="width: 100%;" />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label>Data de Criação</label>
+                            <input type="text" id="idtCreateTxt" name="idtCreateTxt" class="k-textbox" style="width: 100%;" readonly />
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div class="form-group">
+                            <label>Última modificação do Grupo</label>
+                            <input type="text" id="idtUpdateTxt" name="idtUpdateTxt" class="k-textbox" style="width: 100%;" readonly />
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                        <div id="gridGroupLog"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnSalvarInfo" class="btn btn-success btn-xs" >
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Atualizar
+                </button>
+                <button type="button" id="btnExcluirInfo" class="btn btn-danger btn-xs">
+                    <span class="glyphicon glyphicon-trash"></span> Excluir Grupo
+                </button>
+            </div>
+        </div>
+    </div>
+</div>*@

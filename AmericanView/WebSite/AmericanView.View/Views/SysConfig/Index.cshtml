@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li class="active">Configurações Gerais</li>
+    </ol>
+}
+
+<h1>Configurações Gerais</h1>
+<br />
+
+<div class="panel-group k-content">
+    <form id="filter-form">
+        <div class="col-lg-12 col-sm-12">
+            <div class="form-group">
+                <div class="row margin-top-10">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="col-lg-3 col-sm-3"><label><strong>E-mails de Alertas</strong></label></div>                        
+                        <input id="txtEmailAlerta" name="txtEmailAlerta" class="k-textbox filter" style="width: 50%;" data-required="true" />
+                    </div>
+                </div>
+                <div class="row margin-top-10">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="col-lg-3 col-sm-3"><label><strong>Tempo de Armazenamento de dados</strong></label></div>
+                        
+                        <input id="txtLimpezaDados" name="txtLimpezaDados" class="filter" style="width: 50%;" data-required="true" />
+                    </div>
+                </div>
+                <div class="row margin-top-10">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="col-lg-3 col-sm-3"><label><strong>Tempo de Visualização de dados</strong></label></div>
+                        
+                        <input id="txtVisualizacaoDados" name="txtVisualizacaoDados" class="filter" style="width: 50%;" data-required="true" />
+                    </div>
+                </div>
+                <div class="row margin-top-10">
+                    <div class="col-lg-12 col-sm-12">
+                        <div class="col-lg-3 col-sm-3"><label><strong>Agendamento de busca de arquivos</strong></label></div>
+                        
+                        <input id="txtTempoAgendamentoBusca" name="txtTempoAgendamentoBusca" class="filter" style="width: 50%;" data-required="true" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <p></p>
+                <button type="button" id="btnSalvarConfiguracoes" class="btn btn-success btn-xs" onclick="{ javascript: Salvar() };">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+                <button type="button" id="btnLimparPequisa" class="btn btn-danger btn-xs" onclick="{ javascript: ClearForm(this) };">
+                    <span class="glyphicon glyphicon-remove"></span> Limpar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="@Url.Content("/Content/js/app/sistema/sysconfig.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            CarregaComponentes();
+        });
+    </script>
+}

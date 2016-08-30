@@ -1,0 +1,130 @@
+﻿<div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFilter">
+            <h4 class="panel-title">
+                <small><span class="glyphicon glyphicon-chevron-right"></span></small> Filtros
+            </h4>
+        </div>
+        <div id="collapseFilter" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row">
+                    <form id="filter-form">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <label><strong>Código da Matriz</strong></label>
+                                        <input id="txtCodBusiness" name="txtCodBusiness" class="filter" style="width: 100%;" data-required="true" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label><strong>Razão Social</strong></label>
+                                        <input id="txtNameBusiness" name="txtNameBusiness" class="k-textbox filter" style="width: 100%;font-weight:bold" readonly="readonly" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <button type="button" id="btnSearchReports" class="btn btn-success btn-xs" onclick="{ javascript: Search() };">
+                                            <span class="glyphicon glyphicon-search"></span> Pesquisar
+                                        </button>
+                                        <button type="button" id="btnCleanReports" class="btn btn-danger btn-xs" onclick="{ javascript: ClearForm(this) };">
+                                            <span class="glyphicon glyphicon-remove"></span> Limpar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    /*(Businees) Constructor for ddl*/
+    function GetBusiness() {
+        var matrizList = $("#txtCodBusiness").kendoDropDownList({
+            optionLabel: "Selecione uma Matriz...",
+            dataTextField: "CodigoMatriz",
+            dataValueField: "Id",
+            dataSource: GetDsBusiness(),
+            select: onSelectBusiness
+        }).data("kendoDropDownList");
+    }
+
+    /*Handle business change*/
+    function onSelectBusiness(e) {
+        $('#txtNameBusiness').val("");
+        var dataItem = this.dataItem(e.item);
+        $('#txtNameBusiness').val(dataItem.RazaoSocial);
+    }
+
+    /*Get business and fill dropdowlist*/
+    function GetDsBusiness() {
+        $("#loading-page").show();
+        var dataSource = new kendo.data.DataSource({
+            transport: {
+                read: {
+                    url: function () {
+                        var url = "/Empresa/Pesquisar?idInscricao=1";
+                        return url;
+                    },
+                    type: "GET",
+                    dataType: "json",
+                    cache: false,
+                    async: false
+                }
+            },
+            model: {
+                Id: "Id",
+                fields: {
+                    Codigo: { editable: false },
+                    Descricao: { editable: false }
+                }
+            }
+        });
+        $("#loading-page").hide();
+        return dataSource;
+    }
+
+    /*Get values based on search parameters*/
+    function Search() {
+        var countField = 0;
+        $('#filter-form input').each(function () {
+            if ($(this).data('required')) {
+                if ($(this).val() == "" || $(this).val().indexOf('Selecione') > -1) {
+                    $(this).parent().parent().children('label').attr('style', 'color: #ff0000;');
+                    countField++;
+                }
+                else {
+                    $(this).parent().parent().children('label').attr('style', 'color: #222222;');
+                }
+            }
+        });
+
+        if (countField > 0) {
+            var msg = "<p>Preencha os Campos Obrigatórios.</p>";
+            ShowModalAlerta(msg);
+        }
+        else {
+            var obj = GetObj();
+            LoadDsGrid(obj[0]);
+        }
+    }
+
+    /*Reset search filters*/
+    function ClearForm(e) {
+        $("#grid").html("");
+        $("#grid").removeAttr("class");
+        $("#grid").removeAttr("data-role");
+        $(this).trigger("reset");
+        var matrizList = $("#txtCodBusiness").data("kendoDropDownList");
+        matrizList.select(0);
+        $('#txtNameBusiness').val('');
+    }
+</script>

@@ -1,0 +1,270 @@
+﻿@{
+    ViewBag.Title = "Matriz";
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Empresa")" title="Matriz">Matriz</a></li>
+        <li>Cadastros</li>
+        <li class="active">Matriz</li>
+    </ol>
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/cadastros/empresas/empresas.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#usuarios').addClass('active');
+            $('.mini-nav ul li#usuarios ul').attr('style', 'display: none !important;');
+        }
+        $(document).ready(function () {
+            $('#selectStatusUsr').bootstrapSwitch();
+            $("#selectGrupoUsr").kendoMultiSelect({
+                placeholder: "Escolha ...",
+                dataTextField: "text",
+                dataValueField: "value",
+                change: function (e) {
+                    HandleGroupChange();
+                }
+            });
+        $(document).ready(function () { 
+            $('#txtCNPJ').kendoMaskedTextBox({ mask: "00.000.000/0000-00" });
+            $('#txtCNPJFiltro').kendoMaskedTextBox({ mask: "00.000.000/0000-00" });
+            $('#txtCEP').kendoMaskedTextBox({ mask: "00000-000" });
+        });
+
+        jQuery(function ($) {
+            $("#date").mask("99/99/9999", { placeholder: "mm/dd/yyyy" });
+            $("#phone").mask("(999) 999-9999");
+            $("#tin").mask("99-9999999");
+            $("#ssn").mask("999-99-9999");
+        });
+        
+         CarregaComponentes();
+        });
+    </script>
+
+}
+
+<h1>Matriz</h1>
+<br />
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-primary">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseFilter">
+            <h4 class="panel-title">
+                <small><span class="glyphicon glyphicon-chevron-right"></span></small> Filtros
+            </h4>
+        </div>
+        <div id="collapseFilter" class="panel-collapse collapse">
+            <div class="panel-body">
+                <div class="row">
+                    <input type="hidden" id="idEmpresa" />
+                    <form>
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <div class="form-group">
+                                        <!-- Codigo   -->
+                                        <label><strong>Código da Matriz</strong></label>
+                                        <input id="txtCodMatrizFiltro" name="txtCodMatriz" class="k-textbox filter" style="width: 100%;" data-required="true" placeholder="Filtre pelo Código" data-field="CodigoMatriz" data-operator="contains" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label><strong>Razão Social</strong></label>
+                                        <input type="text" id="txtRazaoSocialFiltro" name="txtRazaoSocialFiltro" data-field="RazaoSocial" data-operator="contains" placeholder="Filtre pelo Razão Social" class="k-textbox filter" style="width: 100%;" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="form-group">
+                                        <label for="txtCNPJFiltro"><strong>CNPJ</strong></label> <br />
+                                        <input type="text" maxlength="20" class="k-textbox filter" id="txtCNPJFiltro" name="txtCNPJ" style="width: 100%" placeholder="Filtre pelo CNPJ" data-field="Cnpj" data-operator="contains" />
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <button type="button" id="btnPesquisarEmpresa" class="btn btn-success btn-xs">
+                                    <span class="glyphicon glyphicon-search"></span> Pesquisar
+                                </button>
+                                <button type="button" id="btnLimparPequisa" class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-remove"></span> Limpar
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <button id="btnIncluirEmpresa" type="button" class="btn btn-success btn-xs" style="float: right;margin-right:5px"><span class="glyphicon glyphicon-plus-sign" onclick="IncluirEmpresa()"></span> Incluir</button>
+    <br /><br />
+</div>
+
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col-sm-12">
+        <div id="grid"></div>
+    </div>
+</div>
+<!-- Abaixo está o form modal que edita Matriz(Empresa)  -->
+<div id="modalEditarEmpresa" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <center><h4 class="modal-title"><strong></strong></h4></center>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <input type="hidden" id="idEmpresa" />
+                    <input type="hidden" id="idInscricao" />
+                    <form id="empresaForm">
+                        <div class="col-xs-12">
+                            @*1ª Linha*@
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtRazaoSocial">Razão Social</label> <br />
+                                    <input type="text" maxlength="60" class="k-textbox" id="txtRazaoSocial" name="txtRazaoSocial" placeholder="Razão Social" style="width: 100%" minlength="2" required>
+                                </div>
+                            </div>
+                            @*2ª Linha*@
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtCNPJ">CNPJ</label> <br />
+                                    <input type="text" maxlength="20" class="k-textbox" id="txtCNPJ" name="txtCNPJ" placeholder="CNPJ" style="width: 100%" minlength="2" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtInscricaoEstadual">Inscrição Estadual</label> <br />
+                                    <input type="text" maxlength="25" class="k-textbox" id="txtInscricaoEstadual" name="txtInscricaoEstadual" placeholder="Inscrição Estadual" style="width: 100%" >
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtInscricaoMunicipal">Inscrição Municipal</label> <br />
+                                    <input type="text" maxlength="25" class="k-textbox" id="txtInscricaoMunicipal" name="txtInscricaoMunicipal" placeholder="Inscrição Municipal" style="width: 100%" >
+                                </div>
+                            </div>
+                            @*3ª Linha*@
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtEndereco">Endereço</label> <br />
+                                    <input type="text" maxlength="255" class="k-textbox" id="txtEndereco" name="txtEndereco" placeholder="Endereço" style="width: 100%" minlength="2" >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtNumero">Número</label> <br />
+                                    <input type="text" maxlength="14" class="k-textbox" id="txtNumero" name="txtNumero" placeholder="Número" style="width: 100%" >
+                                </div>
+                            </div>
+                            @*4ª Linha*@
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtBairro">Bairro</label> <br />
+                                    <input type="text" maxlength="60" class="k-textbox" id="txtBairro" name="txtBairro" placeholder="Bairro" style="width: 100%" >
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtCEP">CEP</label> <br />
+                                    <input type="text" maxlength="14" class="k-textbox" id="txtCEP" name="txtCEP" placeholder="CEP" style="width: 100%" >
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtComplemento">Complemento</label> <br />
+                                    <input type="text" maxlength="25" class="k-textbox" id="txtComplemento" name="txtComplemento" placeholder="Complemento" style="width: 100%" >
+                                </div>
+                            </div>
+                            @*5ª Linha*@
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtCidade">Cidade</label> <br />
+                                    <input type="text" maxlength="150" class="k-textbox" id="txtCidade" name="txtCidade" placeholder="Cidade" style="width: 100%" >
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtEstado">Estado</label> <br />
+                                    <input type="text" maxlength="60" class="k-textbox" id="txtEstado" name="txtEstado" placeholder="Estado" style="width: 100%" >
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtPais">Pais</label> <br />
+                                    <input type="text" maxlength="60" class="k-textbox" id="txtPais" name="txtPais" placeholder="Pais" style="width: 100%" >
+                                </div>
+                            </div>
+                            @*6ª Linha*@
+                            <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtTelefone">Telefone</label> <br />
+                                    <input type="text" maxlength="13" class="k-textbox" id="txtTelefone" name="txtTelefone" placeholder="Telefone" style="width: 100%" minlength="2" >
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtCodigoMatriz">Código da Matriz</label> <br />
+                                    <input type="text" maxlength="20" class="k-textbox" id="txtCodigoMatriz" name="txtCodigoMatriz" placeholder="Código da Matriz" style="width: 100%" >
+                                </div>
+                            </div>
+                            @*7ª Linha*@
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-bottom: 0px;">
+                                <div class="form-group">
+                                    <label for="txtEmail">Email</label> <br />
+                                    <input type="email" maxlength="255" class="k-textbox" id="txtEmail" pattern="[a-zA-Z0-9&#32;.&amp;amp;&amp;#39;-]+" name="txtEmail" placeholder="Email: nome@exemplo.net" style="width: 100%" >
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-success btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-arrow-left"></span> Voltar
+                </button>
+                <button type="button" id="btnEditar" class="btn btn-warning btn-xs" onclick="javascript: { EditarVisualizacaoEmpresa(); }">
+                    <span class="glyphicon glyphicon-pencil"></span> Editar
+                </button>
+                @*<button type="button" id="btnReenvioEmail" class="btn btn-primary btn-xs" onclick="javascript: { ReenviarEmailUsuario(); }">
+                    <span class="glyphicon glyphicon-envelope"></span> Reenviar confirmação
+                </button>*@
+                <button type="button" id="btnCancelar" class="btn btn-danger btn-xs" onclick="javascript: { VerificarCancelarEdicao(); }">
+                    <span class="glyphicon glyphicon-remove"></span> Cancelar
+                </button>
+                <button type="button" id="btnSalvar" class="btn btn-success btn-xs" onclick="javascript: { SalvarEmpresa(); }">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="modalCancelarEdicao" class="modal fade">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <center><h4 class="modal-title">Cancelar alterações</h4></center>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" id="btnCancelar" class="btn btn-danger btn-xs" onclick="javascript: { $('#modalCancelarEdicao').modal('hide'); }">
+                    <span class="glyphicon glyphicon-remove"></span> Não
+                </button>
+                <button type="button" id="btnOk" class="btn btn-success btn-xs" onclick="javascript: { $('#modalCancelarEdicao').modal('hide'); $('#modalEditarEmpresa').modal('hide'); }">
+                    <span class="glyphicon glyphicon-ok"></span> Sim
+                </button>
+            </div>
+        </div>
+    </div>
+</div>  

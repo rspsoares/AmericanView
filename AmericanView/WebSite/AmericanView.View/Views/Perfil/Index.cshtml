@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "Perfis";
+}
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/cadastros/perfil/perfis.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#perfil').addClass('active');
+            $('.mini-nav ul li#perfil ul').attr('style', 'display: none !important;');
+        }
+        $(document).ready(function () {
+            CarregaComponentes();
+            $('#btnIncluirUsr').click(function () {
+                //$('#modalIncluirUsr').modal('show');
+                window.location.href = '@Url.Action("Create", "Perfil")';
+            });
+
+        });
+    </script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li>Cadastros</li>
+        <li class="active">Perfis</li>
+    </ol>
+}
+
+<h1>Perfis</h1>
+<br />
+
+<div class="row" style="margin-bottom: 15px;">
+    <div class="col-sm-12">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated bounceInRight">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <i class="glyphicon glyphicon-filter modal-icon"></i>
+                <h4 class="modal-title">Permissões</h4>
+                <small class="font-bold" id="meuPerfil"></small>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="meuIdPerfil"/>
+                <p>
+                    <strong>Nota:</strong> As alterações das permissões deste perfil podem
+                    comprometer a segurança do sistema, altere com aprovação e certeza.
+                </p>
+                <div class="row" style="margin-bottom: 15px;">
+                    <div class="col-sm-12">
+                        <div id="gridPerms" style="height: 240px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary" onclick="SalvarPermissoes">Salvar Mudanças</button>
+            </div>
+        </div>
+    </div>
+</div>

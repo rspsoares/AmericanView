@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Regras de Apuração de Crédito";
+}
+
+@section scripts {
+    <script src="@Url.Content("/Content/js/app/apuracao/credito.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/edit-regra-credito.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/create-condicao-credito.js")" type="text/javascript"></script>
+    <script src="@Url.Content("/Content/js/app/apuracao/apuracaoCFOPRef.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        /* -- Setar Class em expand menu -- */
+        window.onload = setActiveMenu;
+        function setActiveMenu() {
+            $('li#configApurCred').addClass('active');
+            $('.mini-nav ul li#configApurCred ul').attr('style', 'display: none !important;');
+        }
+
+                $(document).ready(function () {
+            $('#txtTipoApuracao').parent().parent().html("");
+            $('#txtTipoImposto').attr('data-required', 'true');
+            GetMatriz();
+            //GetImpostos();
+            // Criar Condição
+            CFOPCredito();
+            CFOPRef();
+            CSTCredito();
+            $('#collapseFilter').collapse('show');
+            $('#accordion .panel .panel-heading').children('h4').children('small').children('span').removeAttr('class');
+            $('#accordion .panel .panel-heading').children('h4').children('small').children('span').attr('class', 'glyphicon glyphicon-chevron-down');
+        });
+    </script>
+}
+
+@section breadcrumbs{
+    <ol class="breadcrumb">
+        <li><span class="glyphicon glyphicon-home"></span> <a href="@Url.Action("Index", "Home")" title="Home">Home</a></li>
+        <li>Configurações</li>
+        <li class="active">Regras de Apuração de Crédito</li>
+    </ol>
+}
+
+<h1>Regras de Apuração de Crédito</h1>
+<br />
+
+@Html.Partial("_FilterApuracoes")
+
+<div class="row"  style="margin-bottom: 15px;margin-right:0px">
+    <div class="col-sm-12">
+        <div id="grid"></div>
+    </div>
+</div>
+
+@* -- Popup de Criar Condicoes -- *@
+<div id="modalCreateCredito" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" onclick="javascript: { FecharModalParam(this); }"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><strong>Condição</strong></h4>
+            </div>
+            <div class="modal-body" style="height: 600px; overflow-y: auto;">
+                @Html.Partial("~/Views/Apuracao/CreateCondicaoCredito.cshtml")
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-primary btn-xs" onclick="javascript: { SalvarCondicao(this); }">
+                    <span class="glyphicon glyphicon-floppy-disk"></span> Salvar
+                </button>
+                <button type="button" id="btnVoltar" class="btn btn-danger btn-xs" onclick="javascript: { FecharModalParam(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Cancelar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+  
+@* -- Popup de Editar Regras -- *@
+<div id="modalViewCredito" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><strong>Edição de Regra de Crédito</strong></h4>
+            </div>
+            <div class="modal-body" style="height: 600px; overflow-y: auto;">
+                @Html.Partial("~/Views/Apuracao/EditRegraCredito.cshtml")
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="btnVoltar" class="btn btn-danger btn-xs" onclick="javascript: { FecharModal(this); }">
+                    <span class="glyphicon glyphicon-remove"></span> Fechar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
