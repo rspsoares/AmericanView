@@ -9,6 +9,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.WebSite", "Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.View", "WebSite\AmericanView.View\AmericanView.View.csproj", "{55B8F84F-014A-43BF-A993-479CD677A781}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Administrativo", "Administrativo", "{FD892290-5D09-4BAE-8DBA-1FC2E29CB47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.Administrativo.Domain", "AmericanView.Administrativo.Domain\AmericanView.Administrativo.Domain.csproj", "{545EC665-2792-45B6-8764-0D4401428831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.Administrativo.Application", "AmericanView.Administrativo.Application\AmericanView.Administrativo.Application.csproj", "{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.Administrativo.Infrastructure", "AmericanView.Administrativo.Infrastructure\AmericanView.Administrativo.Infrastructure.csproj", "{94CA34A2-5727-4E78-89D8-C49DE825C4FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.Administrativo.Test", "AmericanView.Administrativo.Test\AmericanView.Administrativo.Test.csproj", "{202E9681-1F77-4C56-A940-6BA61FED212D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comum", "Comum", "{5CB015FB-85F0-447B-A939-784623F1DA88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmericanView.Comum", "AmericanView.Comum\AmericanView.Comum.csproj", "{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +37,26 @@ Global
 		{55B8F84F-014A-43BF-A993-479CD677A781}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B8F84F-014A-43BF-A993-479CD677A781}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55B8F84F-014A-43BF-A993-479CD677A781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{545EC665-2792-45B6-8764-0D4401428831}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{545EC665-2792-45B6-8764-0D4401428831}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{545EC665-2792-45B6-8764-0D4401428831}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{545EC665-2792-45B6-8764-0D4401428831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CA34A2-5727-4E78-89D8-C49DE825C4FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CA34A2-5727-4E78-89D8-C49DE825C4FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CA34A2-5727-4E78-89D8-C49DE825C4FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CA34A2-5727-4E78-89D8-C49DE825C4FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{202E9681-1F77-4C56-A940-6BA61FED212D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202E9681-1F77-4C56-A940-6BA61FED212D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202E9681-1F77-4C56-A940-6BA61FED212D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202E9681-1F77-4C56-A940-6BA61FED212D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +64,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5E364099-0B35-4415-9BE2-FCA77811F30A} = {1AD6F114-F602-4126-A01F-5BF6DDDC3332}
 		{55B8F84F-014A-43BF-A993-479CD677A781} = {1AD6F114-F602-4126-A01F-5BF6DDDC3332}
+		{545EC665-2792-45B6-8764-0D4401428831} = {FD892290-5D09-4BAE-8DBA-1FC2E29CB47A}
+		{3EDC08B5-879E-4FFA-83C0-C1BB595A2EC8} = {FD892290-5D09-4BAE-8DBA-1FC2E29CB47A}
+		{94CA34A2-5727-4E78-89D8-C49DE825C4FC} = {FD892290-5D09-4BAE-8DBA-1FC2E29CB47A}
+		{202E9681-1F77-4C56-A940-6BA61FED212D} = {FD892290-5D09-4BAE-8DBA-1FC2E29CB47A}
+		{27BC64FC-1A68-458A-871D-7C6F9AF3DCA0} = {5CB015FB-85F0-447B-A939-784623F1DA88}
 	EndGlobalSection
 EndGlobal

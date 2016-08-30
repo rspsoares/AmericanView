@@ -1,0 +1,17 @@
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Application.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Application.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Domain.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Domain.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\obj\Debug\AmericanView.Administrativo.Application.csprojResolveAssemblyReference.cache
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\obj\Debug\AmericanView.Administrativo.Application.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\obj\Debug\AmericanView.Administrativo.Application.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Infrastructure.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\NLog.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\MySql.Data.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Comum.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\Dapper.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Administrativo.Infrastructure.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\NLog.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Comum.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\Dapper.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\Dapper.Contrib.dll

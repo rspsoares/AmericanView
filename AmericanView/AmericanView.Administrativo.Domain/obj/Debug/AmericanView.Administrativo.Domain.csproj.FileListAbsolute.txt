@@ -1,0 +1,7 @@
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\AmericanView.Administrativo.Domain.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\AmericanView.Administrativo.Domain.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\obj\Debug\AmericanView.Administrativo.Domain.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\obj\Debug\AmericanView.Administrativo.Domain.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\Dapper.Contrib.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\Dapper.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\Dapper.xml
