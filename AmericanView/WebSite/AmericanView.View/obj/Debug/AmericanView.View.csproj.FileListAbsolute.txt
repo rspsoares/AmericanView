@@ -1,7 +1,5 @@
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\jquery-ui\css.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\jquery-ui\jquery-ui.min.js
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\mosaic-default.css
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\images\layout\logo-mosaic.png
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\jquery\jquery-2.1.4.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\flot\curvedLines.js
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\plugins\flot\excanvas.min.js
@@ -43,3 +41,4 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.csprojResolveAssemblyReference.cache
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Content\americanview-default.css

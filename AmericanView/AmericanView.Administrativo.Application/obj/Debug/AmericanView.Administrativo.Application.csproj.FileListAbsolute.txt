@@ -15,3 +15,4 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.A
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\AmericanView.Comum.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\Dapper.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\Dapper.Contrib.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Application\bin\Debug\NLog.config

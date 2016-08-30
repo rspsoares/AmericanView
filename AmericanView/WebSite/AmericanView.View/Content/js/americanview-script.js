@@ -1,8 +1,4 @@
-﻿var curInterval;
-var Keeptrue = {};
-var teste = 1;
-
-$(document).ready(function () {
+﻿$(document).ready(function () {
     kendo.culture("pt-BR");
     //var dsMenuLateral = JSON.parse(localStorage.getItem('leftMenuLateral'));
     var dsMenuLateral = null;
@@ -235,106 +231,6 @@ function BuscarDadosGrid(grid, msgNenhumRegistro) {
     }
 }
 
-// Grid Incrições / Holding
-function LoadDsInscricoes() {
-    var datasource = undefined;
-
-    $.ajax({
-        url: "/Home/PesquisarInscricoes",
-        type: "GET",
-        dataType: "json",
-        async: false,
-        cache: false,
-        success: function (result) {
-            if (result.length > 0) {
-                datasource = result;
-                GridInscricoes(datasource);
-            }
-            else {
-                $("#gridGroupAccount").removeAttr("class");
-                $("#gridGroupAccount").html("<p>Nenhuma Inscrição encontrada!</p>");
-            }
-        }
-    });
-}
-
-function GridInscricoes(ds) {
-    $("#gridGroupAccount").html("");
-    $('#gridGroupAccount').kendoGrid({
-        dataSource: {
-            data: ds,
-            schema: {
-                model: {
-                    fields: {
-                        Id: { type: "number" },
-                        Nome: { type: "string" },
-                        Descricao: { type: "string" }
-                    }
-                }
-            },
-            pageSize: 10
-        },
-        filterable: {
-            mode: "row",
-            operators: {
-                string: {
-                    contains: "Contém"
-                }
-            }
-        },       
-        selectable: true,
-        scrollable: false,
-        change: SelecionarInscricao,
-        pageable: {
-            pageSizes: [10, 25, 50]
-        },
-        columns: [
-            { field: "Id", hidden: true },
-            {
-                field: "Nome",
-                title: "Conta",
-                width: '25%',
-                filterable: {
-                    cell: {
-                        operator: "contains"
-                    }
-                }
-            },
-            {
-                field: "Descricao",
-                title: "Descrição",
-                width: '75%',
-                filterable: {
-                    cell: {
-                        operator: "contains"
-                    }
-                }
-            }
-        ]
-    });
-}
-
-function LoadDsMatrizes() {
-    var dsMatriz = undefined;
-    $.ajax({
-        url: "/Empresa/Pesquisar?idInscricao=1",
-        type: "GET",
-        async: false,
-        dataType: "json",
-        cache: false,
-        success: function (result) {
-            dsMatriz = result;
-        }
-    });
-
-    if (dsMatriz == undefined) {
-        ShowModalAlerta("Não foi possível obter as Matrizes.");
-        return;
-    }
-
-    return dsMatriz;
-}
-
 /* -- Formatação de Moeda -- */
 Number.prototype.FormatarMoeda = function (places, symbol, thousand, decimal, negativoParenteses) {
     var valorFormatado;
@@ -449,14 +345,6 @@ function GerarPDF(e, orientacaoPaisagem) {
             }  
         }        
     });      
-}
-
-function ShowModalResumo(title, dataHtml) {
-    $('#modalResumo').modal({ backdrop: 'static', keyboard: false });
-    $('#modalResumo .modal-dialog .modal-header center .modal-title strong').html("");
-    $('#modalResumo .modal-dialog .modal-header center .modal-title strong').html(title);
-    $('#modalResumo .modal-dialog .modal-body').html("");
-    $('#modalResumo .modal-dialog .modal-body').html(dataHtml);
 }
 
 function ShowModalAlerta(dataHtml) {

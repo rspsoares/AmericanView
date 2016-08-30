@@ -259,20 +259,13 @@
     <Content Include="Content\images\icones\ico-collapse.png" />
     <Content Include="Content\images\icones\ico-expand.png" />
     <Content Include="Content\images\icones\ico-list-menu.png" />
-    <Content Include="Content\images\layout\bg-icon-mosaic.jpg" />
     <Content Include="Content\images\layout\bg-info.png" />
-    <Content Include="Content\images\layout\bg01.jpg" />
     <Content Include="Content\images\layout\loading-page.gif" />
-    <Content Include="Content\images\layout\bg-icon-pepsico.jpg" />
     <Content Include="Content\images\layout\bg-menu-big.jpg" />
     <Content Include="Content\images\layout\bg-menu-mini.jpg" />
     <Content Include="Content\images\layout\bg-menu-treeview-xy.gif" />
     <Content Include="Content\images\layout\bg-menu-treeview-y.gif" />
-    <Content Include="Content\images\layout\logo-fospar.png" />
-    <Content Include="Content\images\layout\logo-keeptrue.png" />
-    <Content Include="Content\images\layout\logo-mosaic.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Content\images\layout\logo.png" />
     <Content Include="Content\jqueryvalidate\jquery.validate.js" />
     <Content Include="Content\jqueryvalidate\jquery.validate.min.js" />
     <Content Include="Content\jqueryvalidate\messages_pt_BR.js" />
@@ -295,8 +288,7 @@
     <Content Include="Content\js\app\validacoes\validacoes_documentos.js" />
     <Content Include="Content\js\app\validacoes\validacoes_summary.js" />
     <Content Include="Content\js\app\valoresmanuais\valoresmanuais.js" />
-    <Content Include="Content\js\mosaic-script.js" />
-    <Content Include="Content\js\mosaic-script.min.js" />
+    <Content Include="Content\js\americanview-script.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.af-ZA.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.af.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.am-ET.js" />
@@ -967,7 +959,7 @@
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite.png" />
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite_2x.png" />
     <Content Include="Content\modernizr\modernizr-2.8.3.js" />
-    <Content Include="Content\bootstrap\css\mosaic-custom-bootstrap.css" />
+    <Content Include="Content\bootstrap\css\americanview-custom-bootstrap.css" />
     <Content Include="Content\plugins\flot\curvedLines.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -1359,7 +1351,7 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\mosaic-default.css">
+    <Content Include="Content\americanview-default.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\bootstrap\css\bootstrap-theme.css.map" />

@@ -6,21 +6,14 @@
 <html class="no-js" lang="pt-br" id="htmlpage" ng-app>
 <head>
     <!-- META TAGS -->
-    <meta charset="utf-8" />
+    <meta charset="utf-8" />    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portal de Apuração de Impostos Mosaic." />
-    <meta name="keywords" content="Portal de Apuração, Impostos, mosaic, piscofins" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="title" content="Apuração de Impostos - Mosaic" />
-    <meta name="url" content="www.keeptrue.com.br" />
-    @*<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />*@
-    <meta name="author" content="KeepTrue" />
-    <meta name="company" content="KeepTrue" />
+    <meta name="title" content="American View - Sistema Administrativo" />
     <meta name="revisit-after" content="7" />
-    <link rev="made" href="mailto:suporte@keeptrue.com" />
     <meta http-equiv="Content-Language" content="pt-br">
-
-    <title>..:: Demétra - Login ::..</title>
+    <meta http-equiv="refresh" content="@FormsAuthentication.Timeout.TotalSeconds;url=@FormsAuthentication.LoginUrl" />
+    <title>..:: Login ::..</title>
 
     @Styles.Render("~/Content/css")
    
@@ -38,27 +31,12 @@
         }
     </style>
 </head>
-<body class="blank" style="background: url('/Content/images/layout/bg-info.png') no-repeat center center;   position: fixed;top: 0;left: 0;right: 0;bottom: 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
-    <div id="Container" class="wrap">
-        @* -- CABEÇALHO -- *@
-        <header id="HeaderContainer">
-            <div id="Header">
-                <div class="col-xs-12">
-                    @* -- APP NAME -- *@
-                    <div id="kt-appname">
-                        <a href="@Url.Action("Index", "Home")">
-                            <img src="@Url.Content("~/Content/images/layout/logo-mosaic.png")" title="Mosaic" alt="Mosaic" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        @* -- FIM CABEÇALHO -- *@
-
+<body class="blank" style="background: url('/Content/images/layout/bg-info.png') no-repeat center center; position: fixed;top: 0;left: 0;right: 0;bottom: 0; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;  background-size: cover;">
+    <div id="Container" class="wrap">      
         <!-- Conteúdo -->
         <div id="ContentContainer">
             <div id="Center-Container">
-                <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 50px;">
+                <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" style="margin-top: 100px;">
                     <div class="legend">SISTEMA ADMINISTRATIVO</div>
                     <div class="control-group well">
                         @using (Html.BeginForm())
@@ -94,10 +72,7 @@
     <div id="FooterContainer">
         <div id="Footer">
             <div class="col-xs-12">
-                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
-                <a href="http://www.keeptrue.com" target="_blank">
-                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
-                </a>
+                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>                
             </div>
         </div>
     </div>

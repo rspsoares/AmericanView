@@ -20,3 +20,4 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.T
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Test\bin\Debug\Dapper.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Test.dll.config
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Test\bin\Debug\Dapper.Contrib.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Test\bin\Debug\NLog.config
