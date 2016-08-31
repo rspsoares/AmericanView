@@ -1,0 +1,8 @@
+﻿Este e-mail é para confirmar a modificação do seu número de telefone no {applicationName}.
+
+Usuário: {username}
+Novo número de telefone: {mobile}
+
+Obrigado!
+
+{emailSignature}

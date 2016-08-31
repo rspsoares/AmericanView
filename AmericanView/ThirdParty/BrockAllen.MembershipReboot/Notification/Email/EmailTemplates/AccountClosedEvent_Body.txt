@@ -1,0 +1,5 @@
+﻿Este e-mail é para confirmar que a conta '{username}' foi fechada na aplicação do {applicationName}.
+
+Obrigado!
+
+{emailSignature}

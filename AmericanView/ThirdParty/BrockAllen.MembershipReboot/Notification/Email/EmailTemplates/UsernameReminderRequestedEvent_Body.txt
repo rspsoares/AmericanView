@@ -1,0 +1,12 @@
+﻿Você (ou outra pessoa) requisitou para que seja lembrado
+seu nome de usuário {applicationName}.
+
+Usuário: {username}
+
+Você pode clicar aqui para entrar no {applicationName}:
+
+{loginUrl}
+
+Obrigado!
+
+{emailSignature}

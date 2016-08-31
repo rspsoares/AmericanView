@@ -1,0 +1,10 @@
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\BrockAllen.MembershipReboot.WebHost.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\BrockAllen.MembershipReboot.WebHost.pdb
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.csprojResolveAssemblyReference.cache
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\build\BrockAllen.MembershipReboot.WebHost.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\build\BrockAllen.MembershipReboot.WebHost.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.csprojResolveAssemblyReference.cache
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\ThirdParty\BrockAllen.MembershipReboot.WebHost\obj\Debug\BrockAllen.MembershipReboot.WebHost.pdb

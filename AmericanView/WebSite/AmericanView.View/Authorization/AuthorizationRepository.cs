@@ -10,8 +10,13 @@ namespace AmericanView.View.Authorization
 {
     public class AuthorizationRepository
     {
-        private IPermissoesFacade _permissoes = new PermissoesFacade();
-        
+        IPermissoesFacade _permissoes;
+       
+        public AuthorizationRepository()
+        {
+            _permissoes = new PermissoesFacade();
+        }
+
         public string BuscarPermissoes(string uqUsuario, HttpContextBase httpContext)
         {
             var cacheResult = httpContext.Cache.Get(uqUsuario.ToString());
@@ -22,7 +27,7 @@ namespace AmericanView.View.Authorization
                 return resultados;
             }
             else
-              return cacheResult.ToString();            
+                return cacheResult.ToString();            
         }
 
         public void ObterUsuarioLogado(out string msgErro)

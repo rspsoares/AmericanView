@@ -1,0 +1,16 @@
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\BrockAllen.MembershipReboot.dll.config
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\BrockAllen.MembershipReboot.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\BrockAllen.MembershipReboot.pdb
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\de\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\nl-nl\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\build\ru-ru\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.Resources.ValidationMessages.resources
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.Resources.ValidationMessages.de.resources
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.Resources.ValidationMessages.nl-nl.resources
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.Resources.ValidationMessages.ru-ru.resources
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.csproj.GenerateResource.Cache
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\de\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\nl-nl\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\ru-ru\BrockAllen.MembershipReboot.resources.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.dll
+C:\_Rodrigo\Repositorios\Projeto-Consolidar\src\Keeptrue.Conciliador\ThirdParty\BrockAllen.MembershipReboot\obj\Release\BrockAllen.MembershipReboot.pdb

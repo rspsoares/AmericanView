@@ -1,0 +1,7 @@
+﻿Este e-mail é para confirmar a mudança de seu usuário no {applicationName}.
+
+Novo Usuário: {username}
+
+Obrigado!
+
+{emailSignature}

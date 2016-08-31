@@ -1,0 +1,8 @@
+﻿Este e-mail é para confirmar que um provedor externo de autenticação foi removido de sua conta {applicationName}.
+
+Usuário: {username}
+Provedor de autenticação: {ProviderName}
+
+Obrigado!
+
+{emailSignature}

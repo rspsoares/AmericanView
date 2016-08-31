@@ -1,0 +1,8 @@
+﻿Este e-mail é para confirmar que um endereço de e-mail externo foi associado a sua conta no {applicationName}.
+
+Usuário: {username}
+Provedor de autenticação: {ProviderName}
+
+Obrigado!
+
+{emailSignature}

@@ -1,0 +1,1 @@
+﻿[{applicationName}] Confirmação de Requisição para E-mail

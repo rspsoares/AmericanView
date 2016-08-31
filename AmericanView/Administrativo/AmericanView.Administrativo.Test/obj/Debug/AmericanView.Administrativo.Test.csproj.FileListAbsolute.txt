@@ -31,7 +31,6 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.A
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Infrastructure.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\NLog.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Dapper.Contrib.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\MySql.Data.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Comum.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Dapper.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Application.pdb

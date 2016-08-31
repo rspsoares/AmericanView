@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace AmericanView.Conciliador.View
+namespace AmericanView.View
 {
     public class FilterConfig
     {

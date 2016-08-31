@@ -1,0 +1,12 @@
+﻿Este e-mail é para confirmar a modificação de seu e-mail no {applicationName}.
+
+Usuário: {username}
+E-mail: {email}
+
+Por favor, confirme sua solicitação no link abaixo:
+
+{confirmChangeEmailUrl}
+
+Obrigado!
+
+{emailSignature}

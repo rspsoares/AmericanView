@@ -1,27 +1,34 @@
 ﻿using System.Web.Mvc;
+using AmericanView.View.Authorization;
+using AmericanView.View.Models;
 
 namespace AmericanView.View.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class HomeController : Controller
     {
-        //private AuthorizationHelper claimHelper = new AuthorizationHelper();
-        //private UsuarioLogado usuarioLogado = new UsuarioLogado();
+        private AuthorizationHelper claimHelper = new AuthorizationHelper();
+        private UsuarioLogado usuarioLogado = new UsuarioLogado();
         //private IImportacaoFacade _importacaoFacade;
         //private IConversoresFacade _conversorFacade;
         //private ISaldoFacade _saldoFacade;
         //private IDashBoardFacade _dash;
         //private IFechamentoFacade _fechamentoFacade;
 
-        public HomeController()
-        {
-          //  usuarioLogado = claimHelper.ObterUsuarioLogado();
-          
+        public HomeController()//IImportacaoFacade importacaoFacade, IConversoresFacade conversorFacade, ISaldoFacade saldoFacade, IDashBoardFacade dashboard, IFechamentoFacade fechamentoFacade)
+        {            
+            usuarioLogado = claimHelper.ObterUsuarioLogado();
+            //_importacaoFacade = importacaoFacade;
+            //_conversorFacade = conversorFacade;
+            //_saldoFacade = saldoFacade;
+            //_dash = dashboard;
+            //_fechamentoFacade = fechamentoFacade;
         }
-        
+
+        [AuthorizeUser(AccessLevel = "/Home")]
         public ActionResult Index()
         {
-            //ViewBag.NomeUsuario = usuarioLogado.Nome;
+            ViewBag.NomeUsuario = usuarioLogado.Nome;
             return View();
         }
 
@@ -40,9 +47,9 @@ namespace AmericanView.View.Controllers
         //{
         //    string msgErro = string.Empty;
         //    string pastaPendentes = ConfigurationManager.AppSettings["PastaPendentes"];
-
+            
         //    string msgRetorno = _importacaoFacade.VerificarArquivoImportacoes(pastaPendentes, "3224", "FAGLB03", out msgErro);
-
+                        
         //    if (!string.IsNullOrEmpty(msgErro))
         //        return Json(new { Sucesso = false, Msg = "Houve um erro ao obter as Importações: " + msgErro }, JsonRequestBehavior.AllowGet);
         //    else

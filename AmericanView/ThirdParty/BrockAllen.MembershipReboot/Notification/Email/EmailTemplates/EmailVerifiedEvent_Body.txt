@@ -1,0 +1,11 @@
+﻿Sua conta de e-mail foi verificado no {applicationName}.
+
+Usuário: {username}
+
+Você agora pode se autenticar no endereço:
+
+{loginUrl}
+
+Obrigado!
+
+{emailSignature}

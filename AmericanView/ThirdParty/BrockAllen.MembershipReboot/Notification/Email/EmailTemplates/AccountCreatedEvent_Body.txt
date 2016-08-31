@@ -1,0 +1,13 @@
+﻿Foi criado com sucesso uma conta de usuário na aplicação {applicationName}.
+
+Usuário: {username}
+
+Por favor, clique abaixo para confirmar seu e-mail:
+
+{confirmChangeEmailUrl}
+
+Se este foi um erro e você não deseja completar essa operação, ignore esta mensagem:
+
+Muito obrigado!
+
+{emailSignature}

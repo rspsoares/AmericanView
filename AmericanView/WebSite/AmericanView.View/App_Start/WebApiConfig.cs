@@ -1,8 +1,8 @@
 ﻿using System.Web.Http;
 
-namespace AmericanView.Conciliador.View
+namespace AmericanView.View.App_Start
 {
-    public static class WebApiConfig
+    public class WebApiConfig
     {
         public static void Register(HttpConfiguration config)
         {

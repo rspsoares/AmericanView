@@ -79,16 +79,18 @@ namespace AmericanView.View.Models
     {
         // you can do either style ctor (or none) -- depends how much control 
         // you want over instantiating the CustomDatabase instance
-        //public CustomRepository() : base(new CustomDatabase())
-        //{
-        //    this.isContextOwner = true;
-        //}
-
-        //public CustomRepository(string name) : base(new CustomDatabase(name))
-        //{
-        //    this.isContextOwner = true;
-        //}
-        public CustomRepository(CustomDatabase db): base(db)
+        public CustomRepository()
+            : base(new CustomDatabase())
+        {
+            this.isContextOwner = true;
+        }
+        public CustomRepository(string name)
+            : base(new CustomDatabase(name))
+        {
+            this.isContextOwner = true;
+        }
+        public CustomRepository(CustomDatabase db)
+            : base(db)
         {
         }
 
@@ -241,21 +243,19 @@ namespace AmericanView.View.Models
 
         protected override Tokenizer GetTokenizer(UserAccountEvent<CustomUserAccount> evt)
         {
-            return new Tokenizer();
+            return new Tokenizer(evt.Account.StartingPass);
         }
 
         protected override string LoadBodyTemplate(UserAccountEvent<CustomUserAccount> evt)
         {
             if (evt is AccountCreatedEvent<CustomUserAccount> && !string.IsNullOrEmpty(evt.Account.StartingPass))
             {
-               // return LoadTemplate("AccountCreatedEvent_Custom_Body");
+                return LoadTemplate("AccountCreatedEvent_Custom_Body");
             }
             else
             {
-             //   return LoadTemplate(CleanGenericName(evt.GetType()) + "_Body");
-            }
-
-            return string.Empty;
+                return LoadTemplate(CleanGenericName(evt.GetType()) + "_Body");
+            }            
         }
 
         protected override string GetBody(UserAccountEvent<CustomUserAccount> evt, IDictionary<string, string> values)
@@ -278,14 +278,14 @@ namespace AmericanView.View.Models
     {
         public void Handle(MapClaimsFromAccount<CustomUserAccount> cmd)
         {
-            //cmd.MappedClaims = new System.Security.Claims.Claim[]
-            //{
-            //    new System.Security.Claims.Claim(ClaimTypes.Actor, cmd.Account.FirstName + " " + cmd.Account.LastName),
-            //    new System.Security.Claims.Claim(ClaimTypes.GivenName, cmd.Account.FirstName),
-            //    new System.Security.Claims.Claim(ClaimTypes.Surname, cmd.Account.LastName),
-            //    new System.Security.Claims.Claim(ClaimTypes.GroupSid, cmd.Account.Inscription.ToString()),
-            //    new System.Security.Claims.Claim(ClaimTypes.PrimaryGroupSid, cmd.Account.Source.ToString()),
-            //};
+            cmd.MappedClaims = new System.Security.Claims.Claim[]
+            {
+                new System.Security.Claims.Claim(ClaimTypes.Actor, cmd.Account.FirstName + " " + cmd.Account.LastName),
+                new System.Security.Claims.Claim(ClaimTypes.GivenName, cmd.Account.FirstName),
+                new System.Security.Claims.Claim(ClaimTypes.Surname, cmd.Account.LastName),
+                new System.Security.Claims.Claim(ClaimTypes.GroupSid, cmd.Account.Inscription.ToString()),
+                new System.Security.Claims.Claim(ClaimTypes.PrimaryGroupSid, cmd.Account.Source.ToString()),
+            };
         }
     }
 

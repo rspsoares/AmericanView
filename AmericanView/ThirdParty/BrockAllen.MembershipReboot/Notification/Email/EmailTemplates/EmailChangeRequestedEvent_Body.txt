@@ -1,0 +1,14 @@
+﻿Este e-mail é para confirmar seu endereço de e-mail no {applicationName}.
+
+Usuário: {username}
+E-mail: {NewEmail}
+
+Clique no link abaixo para confirmar:
+
+{confirmChangeEmailUrl}
+
+Caso a solicitação não tenha partido de você, desconsidere este e-mail.
+
+Obrigado!
+
+{emailSignature}

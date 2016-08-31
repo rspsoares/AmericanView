@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
 using BrockAllen.MembershipReboot;
 using AmericanView.View.Models;
 using AmericanView.View.Authorization;
@@ -19,15 +20,15 @@ namespace AmericanView.View.Controllers
         public LoginController(AuthenticationService<CustomUserAccount> authSvc, UserAccountService<CustomUserAccount> userSvc)
         {
             _authSvc = authSvc;
-            _userSvc = userSvc;
+            _userSvc = userSvc;        
         }
-
+        
         public ActionResult Index(string sessaoExpirada = "")
-        {
-            ViewBag.SesaoExpirada = sessaoExpirada;
+        {            
+            ViewBag.SesaoExpirada = sessaoExpirada;            
             return View(new EntradaModel());
         }
-
+      
         [Authorize]
         public ActionResult UpdatePass()
         {
@@ -58,7 +59,7 @@ namespace AmericanView.View.Controllers
         }
 
         public ActionResult RestorePass()
-        {
+        {            
             ViewBag.NomeUsuario = usuarioLogado.Nome;
             return View();
         }
@@ -89,7 +90,7 @@ namespace AmericanView.View.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Index(EntradaModel model)
+        public ActionResult Index(EntradaModel model)        
         {
             if (this.ModelState.IsValid)
             {
@@ -134,22 +135,23 @@ namespace AmericanView.View.Controllers
                     var account = _userSvc.GetByEmail(model.Email);
                     if (account != null)
                     {
-                        //if (!account.PasswordResetSecrets.Any())
-                       // {
+                        if (!account.PasswordResetSecrets.Any())
+                        {
                             _userSvc.ResetPassword(model.Email);
+
                             return View("RestorePassSucess");
-                        //}
+                        }
 
-                        //var vm = new PasswordResetWithSecretInputModel(account.ID);
-                        //vm.Questions =
-                        //    account.PasswordResetSecrets.Select(
-                        //        x => new PasswordResetSecretViewModel
-                        //        {
-                        //            QuestionID = x.PasswordResetSecretID,
-                        //            Question = x.Question
-                        //        }).ToArray();
+                        var vm = new PasswordResetWithSecretInputModel(account.ID);
+                        vm.Questions =
+                            account.PasswordResetSecrets.Select(
+                                x => new PasswordResetSecretViewModel
+                                {
+                                    QuestionID = x.PasswordResetSecretID,
+                                    Question = x.Question
+                                }).ToArray();
 
-                        //return View("ResetWithQuestions", vm);
+                        return View("ResetWithQuestions", vm);
                     }
                     else
                     {

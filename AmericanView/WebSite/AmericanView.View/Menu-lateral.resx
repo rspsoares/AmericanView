@@ -117,6 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="analises" xml:space="preserve">
+    <value>{
+        "id": "devolucoes",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "Análises",
+        "link": "#",
+        "icon": "glyphicon glyphicon-book",
+        "subMenu": [</value>
+  </data>
   <data name="associar" xml:space="preserve">
     <value>{
                 "id": "associar",
@@ -147,6 +157,46 @@
                 "icon": ""
             }</value>
   </data>
+  <data name="cadusuarios" xml:space="preserve">
+    <value>{
+                "id": "usuarios",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Usuários",
+                "link": "/Usuarios",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configApurCred" xml:space="preserve">
+    <value>{
+                "id": "configApurCred",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Apuração de Crédito",
+                "link": "/Apuracao/Credito",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configApurRec" xml:space="preserve">
+    <value>{
+                "id": "configApurRec",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Apuração de Receita",
+                "link": "/Apuracao/Receita",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="configLogs" xml:space="preserve">
+    <value>{
+                "id": "configLogs",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Logs",
+                "link": "/_Logs/Index",
+                "icon": ""
+            }</value>
+  </data>
   <data name="configuracoes" xml:space="preserve">
     <value>{
         "id": "configuracoes",
@@ -156,6 +206,46 @@
         "link": "#",
         "icon": "glyphicon glyphicon-list-alt",
         "subMenu": [</value>
+  </data>
+  <data name="cruzamentos" xml:space="preserve">
+    <value>{
+        "id": "cruzamentos",
+        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+        "isActive": true,
+        "name": "EFD",
+        "link": "#",
+        "icon": "glyphicon glyphicon-indent-right",
+        "subMenu": [</value>
+  </data>
+  <data name="cruzcarga" xml:space="preserve">
+    <value>{
+                "id": "cruzcarga",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Carga",
+                "link": "/EFD/Carga",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cruzlogs" xml:space="preserve">
+    <value>{
+                "id": "cruzlogs",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Logs",
+                "link": "/EFD/Logs",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="cruztarefa" xml:space="preserve">
+    <value>{
+                "id": "cruztarefas",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Tarefas",
+                "link": "/EFD/Tarefas",
+                "icon": ""
+            }</value>
   </data>
   <data name="dashboard" xml:space="preserve">
     <value>{
@@ -168,15 +258,26 @@
         "subMenu": []
     }</value>
   </data>
-  <data name="analises" xml:space="preserve">
+  <data name="documentosfiscais" xml:space="preserve">
     <value>{
-        "id": "devolucoes",
+        "id": "docsfiscais",
         "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
         "isActive": true,
-        "name": "Análises",
-        "link": "#",
-        "icon": "glyphicon glyphicon-book",
-        "subMenu": [</value>
+        "name": "Documentos Fiscais",
+        "link": "/DocumentosFiscais",
+        "icon": "glyphicon glyphicon-duplicate",
+        "subMenu": []
+    }</value>
+  </data>
+  <data name="fechamentos" xml:space="preserve">
+    <value>{
+                "id": "fechamentos",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Fechamentos",
+                "link": "/Fechamento",
+                "icon": ""
+            }</value>
   </data>
   <data name="grupos" xml:space="preserve">
     <value>{
@@ -249,6 +350,26 @@
                 "icon": ""
             }</value>
   </data>
+  <data name="saldosiniciais" xml:space="preserve">
+    <value>{
+                "id": "saldosiniciais",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Saldos Iniciais",
+                "link": "/SaldosIniciais",
+                "icon": ""
+            }</value>
+  </data>
+  <data name="sisconfiggeral" xml:space="preserve">
+    <value>{
+                "id": "tarefas",
+                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
+                "isActive": true,
+                "name": "Exportação de Dados",
+                "link": "/Jobs",
+                "icon": ""
+            }</value>
+  </data>
   <data name="sistema" xml:space="preserve">
     <value>{
         "id": "utilidades",
@@ -272,16 +393,6 @@
     }
 ]</value>
   </data>
-  <data name="cadusuarios" xml:space="preserve">
-    <value>{
-                "id": "usuarios",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Usuários",
-                "link": "/Usuarios",
-                "icon": ""
-            }</value>
-  </data>
   <data name="validacoes" xml:space="preserve">
     <value>{
                 "id": "validacoes",
@@ -289,117 +400,6 @@
                 "isActive": true,
                 "name": "Validações",
                 "link": "/Validacoes",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="fechamentos" xml:space="preserve">
-    <value>{
-                "id": "fechamentos",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Fechamentos",
-                "link": "/Fechamento",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="configApurCred" xml:space="preserve">
-    <value>{
-                "id": "configApurCred",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Apuração de Crédito",
-                "link": "/Apuracao/Credito",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="configApurRec" xml:space="preserve">
-    <value>{
-                "id": "configApurRec",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Apuração de Receita",
-                "link": "/Apuracao/Receita",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="configLogs" xml:space="preserve">
-    <value>{
-                "id": "configLogs",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Logs",
-                "link": "/_Logs/Index",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="cruzamentos" xml:space="preserve">
-    <value>{
-        "id": "cruzamentos",
-        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-        "isActive": true,
-        "name": "EFD",
-        "link": "#",
-        "icon": "glyphicon glyphicon-indent-right",
-        "subMenu": [</value>
-  </data>
-  <data name="cruzcarga" xml:space="preserve">
-    <value>{
-                "id": "cruzcarga",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Carga",
-                "link": "/EFD/Carga",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="cruzlogs" xml:space="preserve">
-    <value>{
-                "id": "cruzlogs",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Logs",
-                "link": "/EFD/Logs",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="cruztarefa" xml:space="preserve">
-    <value>{
-                "id": "cruztarefas",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Tarefas",
-                "link": "/EFD/Tarefas",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="sisconfiggeral" xml:space="preserve">
-    <value>{
-                "id": "tarefas",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Exportação de Dados",
-                "link": "/Jobs",
-                "icon": ""
-            }</value>
-  </data>
-  <data name="documentosfiscais" xml:space="preserve">
-    <value>{
-        "id": "docsfiscais",
-        "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-        "isActive": true,
-        "name": "Documentos Fiscais",
-        "link": "/DocumentosFiscais",
-        "icon": "glyphicon glyphicon-duplicate",
-        "subMenu": []
-    }</value>
-  </data>
-  <data name="saldosiniciais" xml:space="preserve">
-    <value>{
-                "id": "saldosiniciais",
-                "guid": "cd003d17-db0e-4ff2-ab36-c2adbcdca85c",
-                "isActive": true,
-                "name": "Saldos Iniciais",
-                "link": "/SaldosIniciais",
                 "icon": ""
             }</value>
   </data>

@@ -1,0 +1,9 @@
+﻿Este e-mail é para confirmar a associação de um certificado com sua conta no {applicationName}.
+
+Usuário: {username}
+Assunto do Certificado: {Subject}
+Assinatura do Certificado: {Thumbprint}
+
+Obrigado!
+
+{emailSignature}

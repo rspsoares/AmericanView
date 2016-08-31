@@ -1,0 +1,13 @@
+﻿Você reativou sua conta no {applicationName}.
+
+Usuário: {username}
+
+Por favor, clique no link abaixo para confirmar:
+
+{confirmChangeEmailUrl}
+
+Caso não exista desejo de concretizar essa operação, ignore este e-mail.
+
+Obrigado!
+
+{emailSignature}

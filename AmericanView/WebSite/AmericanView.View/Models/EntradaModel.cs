@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace AmericanView.View.Models
-{    
+﻿namespace AmericanView.View.Models
+{
+    using System.ComponentModel.DataAnnotations;
     public class EntradaModel
     {
         [Required(AllowEmptyStrings = false, ErrorMessage = "É necessário que o Login seja informado.")]
@@ -16,6 +15,6 @@ namespace AmericanView.View.Models
         public bool RememberMe { get; set; }
 
         [ScaffoldColumn(false)]
-        public string ReturnUrl { get; set; }
+        public string ReturnUrl { get; set; } 
     }
 }
