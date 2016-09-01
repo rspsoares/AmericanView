@@ -6,7 +6,7 @@ namespace AmericanView.Permissoes.Application.Bindings
     {
         public string BuscarPermissoes(string uqUsuario)
         {           
-            return "/Home,/Analises,/Cruzamentos,/Cadastros,/Configuracoes,/Sistema,/Usuarios,/Usuarios/Create,/Usuarios/Edit";
+            return "/Home";
             //return _gruposRepo.RetornaPemissoesUsuario(uqUsuario);
         }
     }

@@ -7,7 +7,6 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.D
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\AmericanView.Administrativo.Domain\bin\Debug\Dapper.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\bin\Debug\AmericanView.Administrativo.Domain.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\bin\Debug\AmericanView.Administrativo.Domain.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\bin\Debug\Dapper.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\obj\Debug\AmericanView.Administrativo.Domain.csprojResolveAssemblyReference.cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\obj\Debug\AmericanView.Administrativo.Domain.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Domain\obj\Debug\AmericanView.Administrativo.Domain.pdb

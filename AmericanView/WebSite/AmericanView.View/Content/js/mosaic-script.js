@@ -125,10 +125,10 @@ function menuLateral() {
                     $(this).attr('class', 'active-item');
                 });
             });
+        },
+        error: function (error) {
+            alert('Erro ao carregar o Menu Lateral!' + error);
         }
-        //error: function (error) {
-        //    alert('Erro ao carregar o Menu Lateral!');
-        //}
     });
 }
 

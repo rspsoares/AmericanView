@@ -1,5 +1,4 @@
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Domain\bin\Debug\AmericanView.Permissoes.Domain.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Domain\bin\Debug\AmericanView.Permissoes.Domain.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Domain\obj\Debug\AmericanView.Permissoes.Domain.csprojResolveAssemblyReference.cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Domain\obj\Debug\AmericanView.Permissoes.Domain.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Permissoes\AmericanView.Permissoes.Domain\obj\Debug\AmericanView.Permissoes.Domain.pdb

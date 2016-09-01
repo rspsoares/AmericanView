@@ -5,19 +5,19 @@ using AmericanView.View.Authorization;
 using System.Text;
 using AmericanView.Permissoes.Application.Contracts;
 using AmericanView.View.Models;
+using AmericanView.Permissoes.Application.Bindings;
 
 namespace AmericanView.View.Controllers
 {
     [Authorize]
     public class RolesController : Controller
     {
-        IPermissoesFacade _permFacade;
+        IPermissoesFacade _permFacade = new PermissoesFacade();
         private AuthorizationHelper claimHelper = new AuthorizationHelper();
         private UsuarioLogado usuarioLogado = new UsuarioLogado();
 
-        public RolesController(IPermissoesFacade permFacade)
-        {
-            _permFacade = permFacade;
+        public RolesController()
+        {            
             usuarioLogado = claimHelper.ObterUsuarioLogado(false);
         }
 
@@ -58,8 +58,8 @@ namespace AmericanView.View.Controllers
             menu.Append(Menu_lateral.dashboard + ",");
 
             menu.Append(VerificarPermissaoItemMenu(Menu_lateral.home, permissoes.Contains("/Home")));
-            menu.Append(",");
-            menu.Append(VerificarPermissaoItemMenu(Menu_lateral.documentosfiscais, permissoes.Contains("/Home")));
+           // menu.Append(",");
+         //   menu.Append(VerificarPermissaoItemMenu(Menu_lateral.documentosfiscais, permissoes.Contains("/Home")));
 
 
             if (permissoes.Contains("/Analises"))

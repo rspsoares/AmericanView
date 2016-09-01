@@ -39,21 +39,21 @@
                     @* -- COMPONENTE LOGIN -- *@
                     <div id="kt-navigation-content">
                         <ul id="kt-nav" class="nav">
-                            <li class="light-blue-pepsi-nav">
+                            @*<li class="light-blue-pepsi-nav">
                                 <a href="@Url.Action("Index", "Home")" title="Início">
                                     <span>&nbsp;</span>
                                     <span class="glyphicon glyphicon-home"></span>
                                     <span>&nbsp;</span>
                                 </a>
-                            </li>
+                            </li>*@
                             @*<li class="orange-pepsi-nav">
                                 <a href="#" title="Dashboards">
                                     <span>&nbsp;</span>
                                     <span class="glyphicon glyphicon glyphicon-stats"></span>
                                     <span>&nbsp;</span>
                                 </a>
-                            </li>
-                           *@
+                            </li>*@
+                           
                             @if (this.User.Identity.IsAuthenticated)
                             {
                                 <li class="green-pepsi-nav">
@@ -71,9 +71,9 @@
                                         <span class="caret"></span>
                                     </a>
                                     <ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
-                                        <li><a data-noajax="true" href="@Url.Content("~/Login/UpdatePass")"><span class="glyphicon glyphicon-edit"></span> Alterar Senha</a></li>
-                                        <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
-                                        <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-wrench"></span> Suporte ao Sistema</a></li>                                        
+                                        @*<li><a data-noajax="true" href="@Url.Content("~/Login/UpdatePass")"><span class="glyphicon glyphicon-edit"></span> Alterar Senha</a></li>*@
+                                        @*<li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a></li>
+                                        <li><a data-noajax="true" href="#"><span class="glyphicon glyphicon-wrench"></span> Suporte ao Sistema</a></li>*@                                        
                                         <li><a data-noajax="true" href="@Url.Content("~/Login/SignOut")"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
                                     </ul>
                                 </li>
