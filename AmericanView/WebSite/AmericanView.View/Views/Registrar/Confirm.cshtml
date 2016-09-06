@@ -8,19 +8,12 @@
     <!-- META TAGS -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portal de Apuração de Tributos." />
-    <meta name="keywords" content="Portal de Apuração de Tributos, Mosaic, portal, tributos" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="title" content="Portal de Apuração de Tributos" />
-    <meta name="url" content="www.keeptrue.com.br" />
-    @*<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />*@
-    <meta name="author" content="KeepTrue" />
-    <meta name="company" content="KeepTrue" />
+    <meta name="title" content="American View - Sistema Administrativo" />
     <meta name="revisit-after" content="7" />
-    <link rev="made" href="mailto:suporte@keeptrue.com" />
-    <meta http-equiv="Content-Language" content="pt-br">
+    <meta http-equiv="Content-Language" content="pt-br">   
 
-    <title>..:: Portal de Apuração de Tributos - Criação de usuário ::..</title>
+    <title>..:: American View - Criação de usuário ::..</title>
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -41,21 +34,6 @@
 </head>
 <body>
     <div id="Container" class="wrap">
-        @* -- CABEÇALHO -- *@
-        <header id="HeaderContainer">
-            <div id="Header">
-                <div class="col-xs-12">
-                    @* -- APP NAME -- *@
-                    <div id="kt-appname">
-                        <a href="@Url.Action("Index", "Home")">
-                            <img src="@Url.Content("~/Content/images/layout/logo-mosaic.png")" title="Mosaic" alt="Mosaic" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        @* -- FIM CABEÇALHO -- *@
-
         <!-- Conteúdo -->
         <div id="ContentContainer">
             <!-- CONTAINER CONTENT -->
@@ -85,10 +63,7 @@
     <div id="FooterContainer">
         <div id="Footer">
             <div class="col-xs-12">
-                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>
-                <a href="http://www.keeptrue.com" target="_blank">
-                    <img src="@Url.Content("~/Content/images/layout/logo-keeptrue.png")" title="Desenvolvido por KeepTrue" alt="Desenvolvido por KeepTrue" />
-                </a>
+                <small>&#174; @DateTime.Now.Year.ToString() - Todos direitos reservados.</small>             
             </div>
         </div>
     </div>
@@ -96,7 +71,6 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/kendo")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/js-pepsico")
-    @*@RenderSection("scripts", required: false)*@
+    
 </body>
 </html>

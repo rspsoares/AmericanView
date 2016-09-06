@@ -100,7 +100,7 @@ namespace AmericanView.View.Controllers
         //    string msgErro = string.Empty;
 
         //    pasta = Server.MapPath("~/ExportacaoPDF/");
-        //    nomeArquivo = "Mosaic_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".pdf";
+        //    nomeArquivo = "AmericanView_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".pdf";
 
         //    mStreamPDF = _conversorFacade.HTML2PDF(html, Properties.Resources.eoPDFLicense, pasta, orientacaoPaisagem);
 

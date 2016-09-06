@@ -19,7 +19,7 @@ namespace AmericanView.View.App_Start
 
             config.AddCommandHandler(new CustomClaimsMapper());
 
-            var appinfo = new AspNetApplicationInformation("Portal de Apuração de Tributos", "Mosaic",
+            var appinfo = new AspNetApplicationInformation("Sistema Administrativo", "American View",
                 "/Login",
                 "/Registrar/Confirm/",
                 "/Login/Cancel/",

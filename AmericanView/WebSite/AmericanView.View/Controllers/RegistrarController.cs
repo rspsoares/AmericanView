@@ -97,7 +97,7 @@ namespace AmericanView.View.Controllers
         //    }
         //    else if (Between(papel, 3, 4))
         //    {
-        //        uc.Add(ClaimTypes.Role, "Mosaic");
+        //        uc.Add(ClaimTypes.Role, "AmericanView");
         //        if (papel == 3)
         //            uc.Add(ClaimTypes.Role, "Suporte");
         //        else if (papel == 4)

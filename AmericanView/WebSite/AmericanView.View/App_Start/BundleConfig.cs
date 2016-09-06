@@ -31,8 +31,8 @@ namespace AmericanView.View
                     "~/Content/jqueryvalidate/jquery.validate.js",
                     "~/Content/jqueryvalidate/messages_pt_BR.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/js-mosaic").Include(
-                   "~/Content/js/mosaic-script.js"));
+            bundles.Add(new ScriptBundle("~/bundles/js-americanview").Include(
+                   "~/Content/js/americanview-script.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                     "~/Content/modernizr/modernizr-*"));
@@ -55,8 +55,8 @@ namespace AmericanView.View
                 "~/Content/kendo-ui/styles/mobile/kendo.mobile.all.css",
                 "~/Content/bootstrap/css/bootstrap.css",
                 "~/Content/bootstrap/css/bootstrap-switch.css",
-                "~/Content/bootstrap/css/mosaic-custom-bootstrap.css",
-                "~/Content/mosaic-default.css"));
+                "~/Content/bootstrap/css/americanview-custom-bootstrap.css",
+                "~/Content/americanview-default.css"));
         }
     }
 }

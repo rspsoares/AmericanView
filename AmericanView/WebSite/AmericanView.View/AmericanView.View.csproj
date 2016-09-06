@@ -204,7 +204,7 @@
     <Content Include="Content\bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap\css\bootstrap.css" />
     <Content Include="Content\bootstrap\css\bootstrap.min.css" />
-    <Content Include="Content\bootstrap\css\mosaic-custom-bootstrap.css" />
+    <Content Include="Content\bootstrap\css\americanview-custom-bootstrap.css" />
     <Content Include="Content\bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\bootstrap\js\bootstrap-switch.js" />
     <Content Include="Content\bootstrap\js\bootstrap.js" />
@@ -242,7 +242,7 @@
     <Content Include="Content\js\app\home.js" />
     <Content Include="Content\js\app\menu-lateral.js" />
     <Content Include="Content\js\app\sistema\sysconfig.js" />
-    <Content Include="Content\js\mosaic-script.js" />
+    <Content Include="Content\js\americanview-script.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.af-ZA.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.af.js" />
     <Content Include="Content\kendo-ui\js\cultures\kendo.culture.am-ET.js" />
@@ -911,7 +911,7 @@
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite.png" />
     <Content Include="Content\kendo-ui\styles\web\Uniform\sprite_2x.png" />
     <Content Include="Content\modernizr\modernizr-2.8.3.js" />
-    <Content Include="Content\mosaic-default.css" />
+    <Content Include="Content\americanview-default.css" />
     <Content Include="Content\plugins\flot\curvedLines.js" />
     <Content Include="Content\plugins\flot\excanvas.min.js" />
     <Content Include="Content\plugins\flot\jquery.flot.js" />
