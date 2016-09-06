@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Funcionario.cs" />
     <Compile Include="Unidade.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

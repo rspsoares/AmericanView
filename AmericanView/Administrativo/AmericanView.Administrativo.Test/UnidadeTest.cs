@@ -29,7 +29,7 @@ namespace AmericanView.Administrativo.Test
             unidade.Responsavel = "Responsável";
             unidade.Email = "teste@teste.net";
 
-            idUnidade = _facade.InserirUnidade(unidade, out msgErro);
+            idUnidade = _facade.Inserir(unidade, out msgErro);
 
             Assert.AreEqual(msgErro, string.Empty);
         }
@@ -52,7 +52,7 @@ namespace AmericanView.Administrativo.Test
             unidade.Responsavel = "Responsável ALT";
             unidade.Email = "ALT@ALT.net";
 
-            _facade.AtualizarUnidade(unidade, out msgErro);
+            _facade.Atualizar(unidade, out msgErro);
 
             Assert.AreEqual(msgErro, string.Empty);
         }
@@ -65,7 +65,7 @@ namespace AmericanView.Administrativo.Test
             Unidade unidade = new Unidade();
             unidade.Bairro = "Bairro";
 
-            lstUnidades = _facade.ConsultarUnidade(unidade, out msgErro);
+            lstUnidades = _facade.Consultar(unidade, out msgErro);
 
             Assert.IsTrue(lstUnidades.Count > 0);
         }
@@ -75,7 +75,7 @@ namespace AmericanView.Administrativo.Test
         {            
             string msgErro = string.Empty;
             
-            _facade.DesativarUnidade(2, out msgErro);
+            _facade.Desativar(2, out msgErro);
 
             Assert.AreEqual(msgErro, string.Empty);
         }

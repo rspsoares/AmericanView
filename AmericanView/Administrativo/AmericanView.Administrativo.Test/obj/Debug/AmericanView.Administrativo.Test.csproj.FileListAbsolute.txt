@@ -27,7 +27,6 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.A
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Test.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Application.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Domain.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Infrastructure.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\NLog.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Dapper.Contrib.dll
@@ -35,8 +34,8 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.A
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Dapper.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Application.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Domain.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Administrativo.Infrastructure.pdb
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\NLog.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\bin\Debug\AmericanView.Comum.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\obj\Debug\AmericanView.Administrativo.Test.csprojResolveAssemblyReference.cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\Administrativo\AmericanView.Administrativo.Test\obj\Debug\AmericanView.Administrativo.Test.dll

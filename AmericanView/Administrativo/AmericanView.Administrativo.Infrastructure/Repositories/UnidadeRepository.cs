@@ -3,7 +3,6 @@ using AmericanView.Comum.Databases;
 using System.Collections.Generic;
 using Dapper;
 using Dapper.Contrib.Extensions;
-using System.Text;
 using System.Linq;
 using System.Data.SqlClient;
 
@@ -18,10 +17,22 @@ namespace AmericanView.Administrativo.Infrastructure.Repositories
             TipoBanco.GetNomeBancoDados(out _connstring);
         }
 
-        public void AtualizarUnidade(Unidade unidade)
+        public long Inserir(Unidade unidade)
         {
-            StringBuilder sb = new StringBuilder();
+            long Id = 0;
 
+            using (SqlConnection cn = new SqlConnection(_connstring))
+            {
+                cn.Open();
+                Id = cn.Insert(unidade);
+                cn.Close();
+            }
+
+            return Id;
+        }
+
+        public void Atualizar(Unidade unidade)
+        {
             using (SqlConnection cn = new SqlConnection(_connstring))
             {
                 cn.Open();
@@ -30,24 +41,24 @@ namespace AmericanView.Administrativo.Infrastructure.Repositories
             }
         }
 
-        public List<Unidade> ConsultarUnidade(Unidade unidade)
+        public List<Unidade> Consultar(Unidade unidade)
         {
             List<Unidade> lstUnidades = new List<Unidade>();
-            StringBuilder sb = new StringBuilder();
+            string query = string.Empty;
 
-            sb.AppendLine("SELECT * FROM Unidades WHERE Ativo = 1");
+            query = "SELECT * FROM Unidades WHERE Ativo = 1";
             
             using (SqlConnection cn = new SqlConnection(_connstring))
             {
                 cn.Open();
-                lstUnidades = cn.Query<Unidade>(sb.ToString()).ToList();
+                lstUnidades = cn.Query<Unidade>(query).ToList();
                 cn.Close();
             }
 
             return lstUnidades;
         }
 
-        public void DesativarUnidade(int Id)
+        public void Desativar(int Id)
         {
             string query = string.Empty;
 
@@ -59,20 +70,6 @@ namespace AmericanView.Administrativo.Infrastructure.Repositories
                 cn.Execute(query);
                 cn.Close();
             }
-        }
-
-        public long InserirUnidade(Unidade unidade)
-        {            
-            long Id = 0;
-            
-            using (SqlConnection cn = new SqlConnection(_connstring))
-            {
-                cn.Open();
-                Id = cn.Insert(unidade);
-                cn.Close();
-            }
-
-            return Id;
-        }
+        }    
     }
 }

@@ -35,6 +35,7 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.Ef.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.WebHost.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.AspNet.Identity.Core.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -53,6 +54,8 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.WebPages.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.WebPages.Razor.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\WebGrease.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\MySql.Data.Entity.EF6.dll
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\MySql.Data.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\AmericanView.Permissoes.Application.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.Ef.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\BrockAllen.MembershipReboot.WebHost.pdb
@@ -60,6 +63,8 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Antlr3.Runtime.pdb
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Autofac.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Autofac.Integration.Mvc.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.xml
+C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Newtonsoft.Json.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Net.Http.Extensions.xml
@@ -74,7 +79,6 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.WebPages.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.WebPages.Deployment.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\System.Web.WebPages.Razor.xml
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.AspNet.Identity.Core.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\de\BrockAllen.MembershipReboot.resources.dll
@@ -86,7 +90,3 @@ C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.csproj.GenerateResource.Cache
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.dll
 C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\obj\Debug\AmericanView.View.pdb
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\MySql.Data.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\MySql.Data.Entity.EF6.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.dll
-C:\_Rodrigo\Repositorios\AmericanView\AmericanView\WebSite\AmericanView.View\bin\EntityFramework.SqlServer.xml

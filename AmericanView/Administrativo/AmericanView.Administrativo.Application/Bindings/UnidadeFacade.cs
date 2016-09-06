@@ -11,14 +11,32 @@ namespace AmericanView.Administrativo.Application.Bindings
     {
         private UnidadeRepository _repo = new UnidadeRepository();
         private static Logger logger = LogManager.GetCurrentClassLogger();
+        
+        public long Inserir(Unidade unidade, out string msgErro)
+        {
+            long idUnidade = 0;
+            msgErro = string.Empty;
 
-        public void AtualizarUnidade(Unidade unidade, out string msgErro)
+            try
+            {
+                idUnidade = _repo.Inserir(unidade);
+            }
+            catch (Exception ex)
+            {
+                logger.Error("[InserirUnidade] Erro: {0}", ex.Message);
+                msgErro = "Houve um erro ao inserir a unidade.";
+            }
+
+            return idUnidade;
+        }
+
+        public void Atualizar(Unidade unidade, out string msgErro)
         {
             msgErro = string.Empty;
 
             try
             {
-                _repo.AtualizarUnidade(unidade);
+                _repo.Atualizar(unidade);
             }
             catch (Exception ex)
             {
@@ -27,7 +45,7 @@ namespace AmericanView.Administrativo.Application.Bindings
             }            
         }
 
-        public List<Unidade> ConsultarUnidade(Unidade unidade, out string msgErro)
+        public List<Unidade> Consultar(Unidade unidade, out string msgErro)
         {
             List<Unidade> lstUnidades = new List<Unidade>();
 
@@ -35,7 +53,7 @@ namespace AmericanView.Administrativo.Application.Bindings
 
             try
             {
-                lstUnidades = _repo.ConsultarUnidade(unidade);
+                lstUnidades = _repo.Consultar(unidade);
             }
             catch (Exception ex)
             {
@@ -46,37 +64,19 @@ namespace AmericanView.Administrativo.Application.Bindings
             return lstUnidades;
         }
 
-        public void DesativarUnidade(int Id, out string msgErro)
+        public void Desativar(int Id, out string msgErro)
         {            
             msgErro = string.Empty;
 
             try
             {
-                _repo.DesativarUnidade(Id);
+                _repo.Desativar(Id);
             }
             catch (Exception ex)
             {
                 logger.Error("[ExcluirUnidade] Erro: {0}", ex.Message);
                 msgErro = "Houve um erro ao excluir a unidade.";
             }
-        }
-
-        public long InserirUnidade(Unidade unidade, out string msgErro)
-        {
-            long idUnidade = 0;
-            msgErro = string.Empty;
-
-            try
-            {
-                idUnidade = _repo.InserirUnidade(unidade);
-            }
-            catch (Exception ex)
-            {
-                logger.Error("[InserirUnidade] Erro: {0}", ex.Message);
-                msgErro = "Houve um erro ao inserir a unidade.";
-            }
-
-            return idUnidade;
-        }
+        }    
     }
 }
