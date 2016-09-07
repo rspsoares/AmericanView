@@ -98,7 +98,7 @@ namespace AmericanView.Administrativo.Test
             string msgErro = string.Empty;
 
             atraso.IdFuncionario = 2;
-            atraso.Atraso = DateTime.Parse("00:20:00");
+            atraso.Atraso = TimeSpan.Parse("00:20:00");
             
             FileInfo fileInfo = new FileInfo(@"C:\_Rodrigo\AmericanView\logo.jpg");
             long imageFileLength = fileInfo.Length;
@@ -119,7 +119,7 @@ namespace AmericanView.Administrativo.Test
 
             atraso.Id = 10;
             atraso.IdFuncionario = 2;
-            atraso.Atraso = DateTime.Parse("00:33:00");
+            atraso.Atraso = TimeSpan.Parse("00:33:00");
 
             FileInfo fileInfo = new FileInfo(@"C:\_Rodrigo\AmericanView\logo.jpg");
             long imageFileLength = fileInfo.Length;

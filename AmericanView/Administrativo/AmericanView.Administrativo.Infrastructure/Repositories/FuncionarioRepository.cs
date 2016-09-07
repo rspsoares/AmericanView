@@ -43,19 +43,28 @@ namespace AmericanView.Administrativo.Infrastructure.Repositories
 
         public List<Funcionario> Consultar(Funcionario funcionario)
         {
-            List<Funcionario> lstUnidades = new List<Funcionario>();
-            string query = string.Empty;
+            List<Funcionario> lstFuncionarios = new List<Funcionario>();
+            string queryFuncionario = string.Empty;
+            string queryAtrasos = string.Empty;
 
-            query = string.Format("SELECT * FROM Funcionarios WHERE Ativo = 1 AND idUnidade = {0}", funcionario.IdUnidade);
+            queryFuncionario = string.Format("SELECT * FROM Funcionarios WHERE Ativo = 1 AND idUnidade = {0}", funcionario.IdUnidade);
 
             using (SqlConnection cn = new SqlConnection(_connstring))
             {
                 cn.Open();
-                lstUnidades = cn.Query<Funcionario>(query).ToList();
+
+                lstFuncionarios = cn.Query<Funcionario>(queryFuncionario).ToList();
+
+                foreach (Funcionario func in lstFuncionarios)
+                {
+                    queryAtrasos = string.Format("SELECT * FROM FuncionariosAtrasos WHERE IdFuncionario = {0}", func.Id);
+                    func.lstAtrasos = cn.Query<FuncionarioAtrasos>(queryAtrasos).ToList();
+                }
+
                 cn.Close();
             }
 
-            return lstUnidades;
+            return lstFuncionarios;
         }
 
         public void Desativar(long Id)

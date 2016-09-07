@@ -41,7 +41,7 @@ namespace AmericanView.Administrativo.Domain
         [Key]
         public long Id { get; set; }
         public long IdFuncionario { get; set; }
-        public DateTime Atraso { get; set; }
+        public TimeSpan Atraso { get; set; }
         public byte[] Atestado { get; set; }
     }
 }
